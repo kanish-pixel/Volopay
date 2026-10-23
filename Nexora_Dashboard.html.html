@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nexora — Conversation Intelligence</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--bg:#f4f7fb;--panel:#fff;--ink:#172536;--muted:#68778b;--line:#e3eaf2;--nav:#14283f;--teal:#0f8b8d;--teal-light:#e6f7f5;--amber:#a96708;--amber-bg:#fff5df;--red:#b93838;--red-bg:#fff0f0;--blue:#2f64c5;--shadow:0 8px 26px rgba(20,40,63,.06)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.55 "Manrope","Aptos","Segoe UI Variable","Trebuchet MS",sans-serif}
+button,input,select,textarea{font:inherit}button{cursor:pointer;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:9px;padding:9px 12px;font-weight:650}button:hover{border-color:#aebdce}button.primary{background:var(--teal);color:white;border-color:var(--teal)}button.dark{background:var(--nav);color:#fff;border-color:var(--nav)}button.danger{color:var(--red)}button:disabled{opacity:.45;cursor:not-allowed}
+header{background:var(--nav);color:white;padding:18px 26px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px}.logo{width:38px;height:38px;border-radius:12px;background:#20b7a7;display:grid;place-items:center;font-weight:900;color:#082d3b;font-size:18px}.brand h1{font-size:19px;letter-spacing:-.025em;margin:0}.brand p{margin:2px 0 0;color:#b9c9d9;font-size:12px}
+.header-actions{display:flex;gap:8px;flex-wrap:wrap}.header-actions button{background:#203a54;color:white;border-color:#40556b}
+.shell{display:grid;grid-template-columns:220px minmax(0,1fr);min-height:calc(100vh - 74px)}aside{background:#fff;border-right:1px solid var(--line);padding:22px 14px}.nav-label{color:#9aa7b7;text-transform:uppercase;letter-spacing:.12em;font-size:10px;font-weight:800;padding:10px 12px}.navbtn{display:flex;gap:10px;align-items:center;width:100%;border:0;background:transparent;text-align:left;padding:11px 12px;color:#56667a;margin:2px 0}.navbtn.active,.navbtn:hover{background:var(--teal-light);color:#086c6b}.navicon{width:20px;text-align:center}
+.aside-note{margin:24px 8px;padding:14px;background:#f5f8fb;border:1px solid var(--line);border-radius:12px;font-size:12px;color:var(--muted)}
+main{padding:28px;max-width:1600px;width:100%;margin:auto}.pagehead{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex-wrap:wrap;margin-bottom:22px}.eyebrow{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}h2{font-size:28px;letter-spacing:-.045em;font-weight:800;margin:4px 0 4px}h3{font-size:16px;margin:0 0 14px}.sub{color:var(--muted);margin:0}.statusline{display:flex;align-items:center;gap:8px;flex-wrap:wrap;color:var(--muted);font-size:12px}.pill{display:inline-flex;align-items:center;border-radius:999px;padding:4px 8px;font-size:11px;font-weight:750;background:#eef2f7;color:#56667a}.pill.good{background:var(--teal-light);color:#08706c}.pill.warn{background:var(--amber-bg);color:var(--amber)}.pill.bad{background:var(--red-bg);color:var(--red)}.pill.blue{background:#eaf1ff;color:var(--blue)}
+.filters{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:18px;background:#fff;border:1px solid var(--line);border-radius:13px;padding:12px 14px}.filters label{font-size:11px;color:var(--muted);display:block;margin-bottom:4px}.filters select,.filters input{border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:#fff;min-width:150px;color:var(--ink)}.spacer{flex:1}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:18px}.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow);min-width:0}.kpi-top{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:12px;font-weight:700}.kpi-num{font-size:30px;letter-spacing:-.04em;font-weight:800;margin:12px 0 4px}.kpi-foot{font-size:11px;color:var(--muted)}.kpi-symbol{width:30px;height:30px;border-radius:9px;background:var(--teal-light);color:var(--teal);display:grid;place-items:center;font-weight:900}
+.grid2{display:grid;grid-template-columns:1.1fr .9fr;gap:16px;margin-bottom:18px}.gridEqual{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:18px}
+.barrow{display:grid;grid-template-columns:minmax(90px,1fr) 2fr 42px;gap:10px;align-items:center;margin:13px 0;font-size:12px}.bartrack{height:9px;border-radius:99px;background:#edf1f6;overflow:hidden}.barfill{height:100%;background:var(--teal);border-radius:99px}.barvalue{text-align:right;font-weight:750}.route-list{display:grid;gap:10px}.route-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 12px;border:1px solid var(--line);border-radius:10px}.route-name{font-weight:700}.route-desc{font-size:11px;color:var(--muted);margin-top:2px}
+.tablecard{padding:0;overflow:hidden}.tablehead{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:18px 18px 12px;flex-wrap:wrap}.tablewrap{overflow:auto}table{width:100%;border-collapse:collapse;white-space:nowrap}th{text-align:left;background:#f8fafc;color:#77869a;font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:11px 15px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}td{padding:13px 15px;border-bottom:1px solid #edf1f5;font-size:12px}tr:last-child td{border-bottom:0}tbody tr:hover{background:#f8fbfd}.source-id{font-weight:800;color:#2d4a67}.record-title{font-weight:750}.muted{color:var(--muted)}.linkbtn{border:0;background:none;padding:0;color:var(--teal);font-weight:800}.empty{padding:42px 20px;text-align:center;color:var(--muted)}.empty strong{display:block;color:var(--ink);font-size:17px;margin-bottom:8px}.uploadbox{border:1px dashed #b6c7d9;background:#f8fbfd;padding:16px;border-radius:12px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px}.uploadbox p{margin:0;color:var(--muted);font-size:12px}.upload-actions{display:flex;gap:8px;flex-wrap:wrap}.filelabel{display:inline-flex;align-items:center;gap:7px}.filelabel input{max-width:210px;font-size:11px}
+.notice{padding:13px 15px;border-radius:10px;margin-bottom:14px;background:#edf5ff;border:1px solid #d8e7fb;color:#345b8a;font-size:12px}.notice.warning{background:var(--amber-bg);border-color:#f1dfb5;color:#8a5b0c}.notice.error{background:var(--red-bg);border-color:#f3d2d2;color:var(--red)}
+.twoCol{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr);gap:16px}.detail-panel{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:var(--shadow)}.detail-meta{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0 18px}.detail-section{padding:16px 0;border-top:1px solid var(--line)}.detail-section h4{margin:0 0 8px;font-size:12px;color:#64748b;text-transform:uppercase;letter-spacing:.08em}.transcript{background:#f8fafc;border:1px solid var(--line);border-radius:10px;padding:14px;white-space:pre-wrap;max-height:340px;overflow:auto;font-size:12px;line-height:1.7}.turn{padding:10px 0;border-bottom:1px solid var(--line)}.turn:last-child{border-bottom:0}.turn strong{color:var(--teal)}.formrow{display:grid;gap:6px;margin:12px 0}.formrow label{font-size:11px;font-weight:750;color:var(--muted)}.formrow select,.formrow textarea{width:100%;border:1px solid var(--line);border-radius:9px;padding:10px;background:#fff}.formrow textarea{min-height:85px;resize:vertical}.buttonrow{display:flex;gap:8px;flex-wrap:wrap}.briefgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.briefitem{background:#f8fafc;border:1px solid var(--line);border-radius:11px;padding:14px}.briefitem strong{display:block;font-size:20px;margin:4px 0}.hidden{display:none!important}
+@media(max-width:1050px){.shell{grid-template-columns:1fr}aside{border-right:0;border-bottom:1px solid var(--line);padding:8px;display:flex;align-items:center;overflow:auto}.nav-label,.aside-note{display:none}.navbtn{width:auto;white-space:nowrap}.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.grid2,.gridEqual,.twoCol{grid-template-columns:1fr}}
+@media(max-width:600px){main{padding:16px}.kpis{grid-template-columns:1fr 1fr;gap:9px}.card{padding:14px}.kpi-num{font-size:25px}.briefgrid{grid-template-columns:1fr}.pagehead h2{font-size:24px}}
+
+/* ================= NEXORA VISUAL THEME ================= */
+:root {
+  --bg: #eef2ff;
+  --panel: #ffffff;
+  --ink: #17213a;
+  --muted: #68738d;
+  --line: #dce3f2;
+  --nav: #18213f;
+  --teal: #6558e8;
+  --teal-light: #eeecff;
+  --amber: #a45b09;
+  --amber-bg: #fff4df;
+  --red: #b8324b;
+  --red-bg: #fff0f3;
+  --blue: #315fca;
+  --shadow: 0 12px 32px rgba(31, 42, 86, .075);
+}
+
+body {
+  background:
+    radial-gradient(circle at 92% 3%, rgba(135, 124, 255, .15), transparent 28rem),
+    linear-gradient(135deg, #f5f7ff 0%, #eef2ff 52%, #f8faff 100%);
+  color: var(--ink);
+}
+
+header {
+  background: linear-gradient(112deg, #171f3b 0%, #252e58 58%, #393779 100%);
+  border-bottom: 3px solid #8175ff;
+  box-shadow: 0 8px 24px rgba(24, 33, 63, .16);
+}
+
+.logo {
+  background: linear-gradient(135deg, #a99fff, #6ee7d8);
+  color: #171f3b;
+  box-shadow: 0 0 0 4px rgba(255,255,255,.08);
+}
+
+.header-actions button {
+  background: rgba(255,255,255,.09);
+  border-color: rgba(255,255,255,.2);
+  transition: background .2s ease, transform .2s ease;
+}
+.header-actions button:hover {
+  background: rgba(255,255,255,.17);
+  transform: translateY(-1px);
+}
+
+/* Dedicated menu palette: deep indigo background, lavender active state */
+aside {
+  background: linear-gradient(180deg, #20294c 0%, #171f3b 100%);
+  border-right: 1px solid #303b65;
+  color: #fff;
+  box-shadow: 8px 0 28px rgba(26, 35, 71, .06);
+}
+.nav-label { color: #9ca9d6; }
+.navbtn {
+  color: #c5cde8;
+  border-radius: 11px;
+  margin: 5px 0;
+  padding: 12px 13px;
+  transition: background .18s ease, color .18s ease, transform .18s ease;
+}
+.navbtn:hover {
+  background: rgba(168, 159, 255, .13);
+  color: #fff;
+  transform: translateX(2px);
+}
+.navbtn.active {
+  color: #fff;
+  background: linear-gradient(100deg, #6558e8, #8175ff);
+  box-shadow: 0 7px 18px rgba(101, 88, 232, .28);
+}
+.navicon {
+  display: inline-grid;
+  place-items: center;
+  width: 27px;
+  height: 27px;
+  border-radius: 8px;
+  background: rgba(255,255,255,.09);
+  color: #d8d4ff;
+}
+.navbtn.active .navicon { background: rgba(255,255,255,.18); color: #fff; }
+.aside-note {
+  background: rgba(255,255,255,.06);
+  border-color: rgba(255,255,255,.12);
+  color: #c4cce6;
+}
+.aside-note strong { color: #fff; }
+
+main { padding-top: 30px; }
+.card, .detail-panel, .filters {
+  border-color: rgba(205, 214, 239, .9);
+  box-shadow: var(--shadow);
+}
+.card, .detail-panel { border-radius: 16px; }
+.filters {
+  background: rgba(255,255,255,.88);
+  backdrop-filter: blur(10px);
+}
+.eyebrow { color: #6558e8; }
+button.primary {
+  background: linear-gradient(110deg, #6558e8, #8175ff);
+  border-color: #6558e8;
+}
+button.primary:hover { filter: brightness(1.04); }
+button.dark { background: #20294c; border-color: #20294c; }
+.kpi-symbol { background: #eeecff; color: #6558e8; }
+.barfill { background: linear-gradient(90deg, #6558e8, #43c9bd); }
+.linkbtn { color: #6558e8; }
+.turn strong { color: #6558e8; }
+th { background: #f2f4ff; color: #66708d; }
+tbody tr:hover { background: #f5f5ff; }
+.uploadbox { background: #f8f8ff; border-color: #c7c2ff; }
+.transcript { background: #f7f8ff; }
+.briefitem { background: #f7f7ff; }
+
+@media (max-width: 1050px) {
+  aside { background: #20294c; }
+  .navbtn { flex-shrink: 0; }
+}
+@media (max-width: 600px) {
+  header { padding: 16px; }
+}
+/* ================= END NEXORA VISUAL THEME ================= */
+
+</style>
+</head>
+<body>
+<header>
+ <div class="brand"><div class="logo">NX</div><div><h1>Nexora</h1><p>Conversation intelligence workspace · 21 Aug 2026 · Asia/Kolkata</p></div></div>
+ <div class="header-actions"><button id="exportBtn">Export current state</button><button id="resetBtn">Reset local state</button></div>
+</header>
+<div class="shell">
+<aside>
+ <div class="nav-label">Nexora Workspace</div>
+ <button class="navbtn active" data-page="overview"><span class="navicon">▦</span> Executive Overview</button>
+ <button class="navbtn" data-page="inbox"><span class="navicon">☷</span> Conversation Intelligence</button>
+ <button class="navbtn" data-page="brief"><span class="navicon">✦</span> Leadership Insights</button>
+ <button class="navbtn" data-page="imports"><span class="navicon">⇧</span> Data Management</button>
+ <div class="aside-note"><strong>Evidence first</strong><br>Stored labels are treated as source metadata, not ground truth. Missing text is not interpreted as proof that no conversation occurred.</div>
+</aside>
+<main>
+<section id="page-overview">
+ <div class="pagehead"><div><div class="eyebrow">Nexora Intelligence Center</div><h2>Executive Overview</h2><p class="sub">A focused view of selected source records, transcript coverage and items needing review.</p></div><div class="statusline"><span class="pill blue" id="statePill">Waiting for import</span><span id="lastAction">No data loaded yet</span></div></div>
+ <div id="loadNotice" class="notice warning">Upload <strong>data/01_initial.json</strong> and <strong>data/02_update.json</strong> using Imports & exports. These JSON deliveries were not included with the documentation files, so this starter does not invent source records.</div>
+ <div class="filters">
+  <div><label for="personFilter">Person (call rep / meeting organiser)</label><select id="personFilter"><option value="">All people</option></select></div>
+  <div><label for="typeFilter">Source type</label><select id="typeFilter"><option value="">Calls + meetings</option><option value="call">Calls</option><option value="meeting">Meetings</option></select></div>
+  <div><label for="routeFilter">Route</label><select id="routeFilter"><option value="">All routes</option></select></div>
+  <div><label for="reviewFilter">Review state</label><select id="reviewFilter"><option value="">All states</option><option value="ready">Text available</option><option value="missing">Missing supplied text</option><option value="pending">Needs review</option></select></div>
+  <div class="spacer"></div><button id="clearFilters">Clear filters</button>
+ </div>
+ <div class="kpis">
+  <div class="card"><div class="kpi-top">Unique source records <span class="kpi-symbol">#</span></div><div class="kpi-num" id="kpiRecords">0</div><div class="kpi-foot">Distinct (source_type, source_id)</div></div>
+  <div class="card"><div class="kpi-top">Usable supplied text <span class="kpi-symbol">▤</span></div><div class="kpi-num" id="kpiCoverage">—</div><div class="kpi-foot" id="coverageFoot">0 of 0 selected records</div></div>
+  <div class="card"><div class="kpi-top">Needs human review <span class="kpi-symbol">!</span></div><div class="kpi-num" id="kpiReview">0</div><div class="kpi-foot">Missing text or stale analysis</div></div>
+  <div class="card"><div class="kpi-top">Manual route overrides <span class="kpi-symbol">↺</span></div><div class="kpi-num" id="kpiOverrides">0</div><div class="kpi-foot">Saved in this browser</div></div>
+ </div>
+ <div class="grid2">
+  <div class="card"><h3>Selected-record activity by person</h3><div id="peopleChart"><div class="empty">Import the JSON deliveries to calculate activity.</div></div><p class="kpi-foot">Calls are grouped by rep name; meetings by organiser email. Organisers are not assumed to be sellers or attendees.</p></div>
+  <div class="card"><h3>Routing & review distribution</h3><div id="routeChart"><div class="empty">Route counts appear after import.</div></div><p class="kpi-foot">A record can have multiple route assignments, so route totals may exceed unique records.</p></div>
+ </div>
+ <div class="card tablecard"><div class="tablehead"><div><h3 style="margin:0">Priority inbox</h3><div class="kpi-foot">Open any row to inspect source evidence and edit its route.</div></div><button id="goInbox">View all records →</button></div><div id="priorityTable"></div></div>
+</section>
+
+<section id="page-inbox" class="hidden">
+ <div class="pagehead"><div><div class="eyebrow">Conversation intelligence library</div><h2>Conversation Intelligence</h2><p class="sub">Inspect source metadata, supplied text, suggested routing and human decisions.</p></div><span class="pill" id="inboxCount">0 records</span></div>
+ <div class="filters"><div><label for="searchInput">Search source, title, person or text</label><input id="searchInput" placeholder="Search conversations..." style="min-width:230px"></div><div><label for="inboxType">Source type</label><select id="inboxType"><option value="">All types</option><option value="call">Calls</option><option value="meeting">Meetings</option></select></div><div><label for="inboxRoute">Route</label><select id="inboxRoute"><option value="">All routes</option></select></div><div><label for="inboxState">Review state</label><select id="inboxState"><option value="">All states</option><option value="ready">Text available</option><option value="missing">Missing text</option><option value="pending">Needs review</option></select></div></div>
+ <div class="card tablecard"><div id="inboxTable"></div></div>
+</section>
+
+<section id="page-detail" class="hidden">
+ <div class="pagehead"><div><div class="eyebrow">Record evidence</div><h2 id="detailTitle">Conversation detail</h2><p class="sub" id="detailSubtitle"></p></div><button id="backInbox">← Back to inbox</button></div>
+ <div class="twoCol"><div class="detail-panel" id="detailEvidence"></div><div class="detail-panel" id="detailActions"></div></div>
+</section>
+
+<section id="page-brief" class="hidden">
+ <div class="pagehead"><div><div class="eyebrow">Leadership signal report</div><h2>Leadership Insights</h2><p class="sub">21 August 2026 · Asia/Kolkata · generated from the currently imported source state.</p></div><button id="downloadBrief">Download brief JSON</button></div>
+ <div id="briefContent"><div class="empty"><strong>Brief not yet available</strong>Import both JSON deliveries to build the brief from supplied records.</div></div>
+</section>
+
+<section id="page-imports" class="hidden">
+ <div class="pagehead"><div><div class="eyebrow">Data control room</div><h2>Data Management</h2><p class="sub">Replay-safe upserts, preserved manual judgement and machine-readable exports.</p></div></div>
+ <div class="notice">Identity is the pair <code>(source_type, source_id)</code>. Newer revisions replace source payloads; same/older revisions are ignored. Manual route choices remain separate from source data.</div>
+ <div class="card" style="margin-bottom:16px"><h3>Import source deliveries</h3><div class="uploadbox"><div><strong>01 · Initial delivery</strong><p>Expected revision 1 · 44 source records</p></div><label class="filelabel">Choose JSON <input type="file" id="initialFile" accept=".json,application/json"></label><button id="importInitial" class="primary">Import initial</button></div><div class="uploadbox"><div><strong>02 · Update delivery</strong><p>Expected revision 2 · adds late text to an existing meeting</p></div><label class="filelabel">Choose JSON <input type="file" id="updateFile" accept=".json,application/json"></label><button id="importUpdate" class="primary">Import update</button></div><div class="buttonrow"><button id="repeatInitial">Repeat initial import</button><button id="applyBoth" class="dark">Apply both files in order</button><button id="demoReset">Clear saved records</button></div><p class="kpi-foot" style="margin-top:12px">Select the JSON files first. If your files are stored under this project’s <code>data/</code> folder, use the file picker because browsers cannot silently read local files.</p></div>
+ <div class="gridEqual"><div class="card"><h3>Import history</h3><div id="importHistory" class="muted">No imports yet.</div></div><div class="card"><h3>Export current state</h3><p class="muted">Downloads one JSON bundle containing the current source state, manifest, and generated route outputs. Every manifest output path points to an item embedded in the bundle.</p><div class="buttonrow"><button id="exportManifest" class="primary">Download manifest.json</button><button id="exportBundle">Download export bundle</button><button id="exportCSV">Download manifest.csv</button></div></div></div>
+ <div class="card"><h3>Replay checklist</h3><ol><li>Import initial batch → 44 unique records, 17 usable texts.</li><li>Repeat initial batch → still 44 records.</li><li>Open M07 in the inbox and manually change its route.</li><li>Import update batch → still 44 records, 18 usable texts.</li><li>Import initial batch again → revision 1 must not replace revision 2; manual route must remain after refresh.</li></ol><p class="kpi-foot">The app stores source state and route decisions in browser localStorage. Use Reset local state for a clean replay.</p></div>
+ <div id="importMessage"></div>
+</section>
+</main>
+</div>
+<script>
+(() => {
+const STORE_KEY='ri_inbox_state_v1';
+const ROUTES=['Sales coaching','Deal next steps','Customer follow-up','Internal / vendor note','Human review'];
+const state={records:{},history:[],selectedKey:null};
+let initialEnvelope=null, updateEnvelope=null;
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const keyOf=(type,id)=>`${type}::${id}`;
+const values=()=>Object.values(state.records);
+function readText(r){
+ if(r.source_type==='call') return typeof r.payload?.transcript==='string' ? r.payload.transcript.trim() : '';
+ const turns=r.transcript_payload?.turns;
+ return Array.isArray(turns)?turns.filter(t=>String(t?.text||'').trim()).map(t=>`${t.speaker||'Speaker'}: ${t.text}`).join('\n'):'';
+}
+function personOf(r){return r.source_type==='call'?(r.payload?.rep_name||r.payload?.rep_email||'Unknown call rep'):(r.payload?.organizer_email||'Unknown meeting organiser');}
+function titleOf(r){return r.source_type==='call'?(r.payload?.observed_outcome||'Call conversation'):(r.payload?.title||'Meeting');}
+function dateOf(r){const raw=r.source_type==='call'?r.payload?.started_at:r.payload?.starts_at; if(!raw)return 'Unknown date'; try{return new Intl.DateTimeFormat('en-GB',{day:'2-digit',month:'short',year:'numeric',timeZone:'Asia/Kolkata'}).format(new Date(raw));}catch{return 'Unknown date';}}
+function hasText(r){return !!readText(r).trim();}
+function textOf(r){return readText(r);}
+function suggestionFor(r){
+ const t=textOf(r).toLowerCase();
+ if(!t) return {routes:['Human review'],reason:'No usable supplied transcript is available. Do not infer a conversation outcome from missing text.',state:'missing',next:'Inspect available metadata or obtain usable conversation text before substantive analysis.'};
+ const routes=[];
+ if(/send (me |the |a )?(proposal|presentation|email|details)|email (you|me)|follow.?up|call on monday|contact me|message me/.test(t)) routes.push('Customer follow-up','Deal next steps');
+ if(/price|budget|not essential|cost|expensive|evaluate|interested|requirement|consider/.test(t)) routes.push('Deal next steps');
+ if(/cold call|not interested|already have|can't hear|could not hear|wrong email|not a fit|not looking/.test(t)) routes.push('Sales coaching');
+ if(/supplier|vendor|invoice|payment|partner|partnership|provider|service/.test(t)) routes.push('Internal / vendor note');
+ if(!routes.length) routes.push('Human review');
+ return {routes:[...new Set(routes)],reason:'Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.',state:'pending',next:'Review the transcript, verify the suggested route and assign a next action only where the source supports it.'};
+}
+function ensureAnalysis(rec){
+ const sig=`${rec.applied_revision}:${textOf(rec).length}:${textOf(rec).slice(0,80)}`;
+ if(rec.analysis_signature!==sig){
+  const s=suggestionFor(rec);
+  rec.suggested_routes=s.routes; rec.route_reason=s.reason; rec.review_state=s.state;
+  rec.next_action=s.next; rec.analysis_signature=sig; rec.analysis_revision=rec.applied_revision;
+ }
+}
+function activeRoutes(r){return r.manual_routes?.length?r.manual_routes:(r.suggested_routes||['Human review']);}
+function reviewState(r){if(!hasText(r))return 'missing'; if(r.analysis_revision!==r.applied_revision)return 'pending'; return r.review_state==='ready'?'ready':(r.reviewed?'ready':'pending');}
+function hydrate(rec,revision){
+ const type=rec.source_type, id=rec.source_id;
+ if(!type||!id||!rec.payload) return false;
+ const key=keyOf(type,id), old=state.records[key];
+ if(old && Number(revision)<=Number(old.applied_revision||0)) return false;
+ const next={...(old||{}),key,record_ref:rec.record_ref||old?.record_ref||'',source_type:type,source_id:id,payload:rec.payload,transcript_payload:rec.transcript_payload??null,applied_revision:Number(revision||1),batch_id:rec.__batch_id||'',manual_routes:old?.manual_routes||null,manual_override:old?.manual_override||false,source_updated_at:new Date().toISOString()};
+ ensureAnalysis(next);
+ if(old && (textOf(old)!==textOf(next))) {next.reviewed=false; next.review_state=hasText(next)?'pending':'missing'; next.analysis_revision=next.applied_revision;}
+ state.records[key]=next; return true;
+}
+function persist(){try{localStorage.setItem(STORE_KEY,JSON.stringify({records:state.records,history:state.history}));}catch(e){console.warn('Could not persist state',e);}}
+function restore(){try{const x=JSON.parse(localStorage.getItem(STORE_KEY)||'{}');if(x.records)state.records=x.records;if(x.history)state.history=x.history;}catch(e){console.warn(e)}}
+function recordBatch(envelope,label){
+ if(!envelope||!Array.isArray(envelope.records))throw new Error('This JSON must contain a records array.');
+ const revision=Number(envelope.revision||1);let added=0,updated=0,ignored=0;
+ for(const raw of envelope.records){
+  const rec={...raw,__batch_id:envelope.batch_id||label};
+  const key=keyOf(rec.source_type,rec.source_id), before=state.records[key];
+  const did=hydrate(rec,revision);
+  if(did){if(before)updated++;else added++;}else ignored++;
+ }
+ state.history.unshift({at:new Date().toLocaleString(),batch:envelope.batch_id||label,revision,received:envelope.records.length,added,updated,ignored,total:Object.keys(state.records).length});
+ persist();renderAll();
+ showImportMessage(`${label}: received ${envelope.records.length}; added ${added}; updated ${updated}; ignored same/older revisions ${ignored}. Unique records now ${Object.keys(state.records).length}.`,'good');
+}
+async function fileEnvelope(inputId){const f=$(inputId).files?.[0];if(!f)throw new Error('Choose the JSON file first.');return JSON.parse(await f.text());}
+function showImportMessage(msg,type='good'){$('importMessage').innerHTML=`<div class="notice ${type==='bad'?'error':''}">${esc(msg)}</div>`;}
+function routeCounts(records){const counts={};records.forEach(r=>activeRoutes(r).forEach(x=>counts[x]=(counts[x]||0)+1));return counts;}
+function filters(){
+ const all=values(); const person=$('personFilter').value,type=$('typeFilter').value,route=$('routeFilter').value,rev=$('reviewFilter').value;
+ return all.filter(r=>(!person||personOf(r)===person)&&(!type||r.source_type===type)&&(!route||activeRoutes(r).includes(route))&&(!rev||(rev==='ready'?reviewState(r)==='ready':rev==='missing'?reviewState(r)==='missing':reviewState(r)==='pending')));
+}
+function fillSelect(id,items,placeholder){const sel=$(id),old=sel.value;sel.innerHTML=`<option value="">${esc(placeholder)}</option>`+items.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');if(items.includes(old))sel.value=old;}
+function updateFilterOptions(){
+ const all=values();const people=[...new Set(all.map(personOf))].sort();fillSelect('personFilter',people,'All people');
+ const routes=[...new Set(all.flatMap(activeRoutes))].sort();fillSelect('routeFilter',routes,'All routes');fillSelect('inboxRoute',routes,'All routes');
+}
+function chartBars(containerId,counts,emptyText){
+ const el=$(containerId), entries=Object.entries(counts).sort((a,b)=>b[1]-a[1]);
+ if(!entries.length){el.innerHTML=`<div class="empty">${esc(emptyText)}</div>`;return;}
+ const max=Math.max(...entries.map(x=>x[1]),1);
+ el.innerHTML=entries.slice(0,9).map(([name,n])=>`<div class="barrow"><div title="${esc(name)}">${esc(name.length>25?name.slice(0,22)+'…':name)}</div><div class="bartrack"><div class="barfill" style="width:${n/max*100}%"></div></div><div class="barvalue">${n}</div></div>`).join('');
+}
+function pillFor(r){const st=reviewState(r);return st==='ready'?'<span class="pill good">Reviewed</span>':st==='missing'?'<span class="pill warn">No supplied text</span>':'<span class="pill blue">Needs review</span>';}
+function tableHTML(records,limit=null){
+ if(!records.length)return '<div class="empty"><strong>No source records to show</strong>Import the JSON deliveries or change your filters.</div>';
+ const shown=limit?records.slice(0,limit):records;
+ return `<div class="tablewrap"><table><thead><tr><th>Record</th><th>Type</th><th>Person</th><th>Date</th><th>Text</th><th>Route</th><th>Review</th><th></th></tr></thead><tbody>${shown.map(r=>`<tr><td><span class="source-id">${esc(r.record_ref||r.source_id.slice(0,8))}</span><div class="muted">${esc(r.source_id.slice(0,12))}…</div></td><td>${r.source_type==='call'?'☎ Call':'▣ Meeting'}</td><td>${esc(personOf(r))}</td><td>${esc(dateOf(r))}</td><td>${hasText(r)?'<span class="pill good">Available</span>':'<span class="pill warn">Missing</span>'}</td><td>${activeRoutes(r).map(x=>`<span class="pill">${esc(x)}</span>`).join(' ')}</td><td>${pillFor(r)}</td><td><button class="linkbtn" data-open="${esc(r.key)}">Inspect →</button></td></tr>`).join('')}</tbody></table></div>`;
+}
+function renderOverview(){
+ const all=filters(), total=all.length, usable=all.filter(hasText).length, pending=all.filter(r=>reviewState(r)!=='ready').length, overrides=all.filter(r=>r.manual_override).length;
+ $('kpiRecords').textContent=total;$('kpiCoverage').textContent=total?`${Math.round(usable/total*100)}%`:'—';$('coverageFoot').textContent=`${usable} of ${total} selected records have usable supplied text`;$('kpiReview').textContent=pending;$('kpiOverrides').textContent=overrides;
+ const pc={};all.forEach(r=>pc[personOf(r)]=(pc[personOf(r)]||0)+1);chartBars('peopleChart',pc,'Import the JSON deliveries to calculate activity.');
+ chartBars('routeChart',routeCounts(all),'Route counts appear after import.');
+ const pri=all.filter(r=>reviewState(r)!=='ready'||activeRoutes(r).includes('Human review'));$('priorityTable').innerHTML=tableHTML((pri.length?pri:all).slice().sort((a,b)=>Number(reviewState(a)==='ready')-Number(reviewState(b)==='ready')),7);
+ $('statePill').textContent=values().length?`${values().length} unique records`:'Waiting for import';$('lastAction').textContent=state.history[0]?`Last import ${state.history[0].at}`:'No data loaded yet';
+ $('loadNotice').classList.toggle('hidden',values().length>0);
+}
+function renderInbox(){
+ const q=$('searchInput').value.toLowerCase(),type=$('inboxType').value,route=$('inboxRoute').value,st=$('inboxState').value;
+ const rows=values().filter(r=>(!type||r.source_type===type)&&(!route||activeRoutes(r).includes(route))&&(!st||(st==='ready'?reviewState(r)==='ready':st==='missing'?reviewState(r)==='missing':reviewState(r)==='pending'))&&(!q||[r.record_ref,r.source_id,titleOf(r),personOf(r),textOf(r)].join(' ').toLowerCase().includes(q))).sort((a,b)=>String(a.record_ref).localeCompare(String(b.record_ref)));
+ $('inboxCount').textContent=`${rows.length} records`;$('inboxTable').innerHTML=tableHTML(rows);
+}
+function renderBrief(){
+ const all=values(),calls=all.filter(r=>r.source_type==='call').length,meetings=all.filter(r=>r.source_type==='meeting').length,text=all.filter(hasText).length,missing=all.length-text;
+ const counts=routeCounts(all);const pending=all.filter(r=>reviewState(r)!=='ready');
+ const important=all.filter(r=>hasText(r)&&activeRoutes(r).some(x=>['Customer follow-up','Deal next steps'].includes(x))).slice(0,5);
+ $('briefContent').innerHTML=all.length?`<div class="card" style="margin-bottom:16px"><div class="eyebrow">Executive summary</div><h3 style="margin-top:6px">Selected activity snapshot</h3><p>After imports, the workspace contains <strong>${all.length} unique source records</strong>: ${calls} calls and ${meetings} meetings. Usable supplied text is available for ${text} records (${all.length?Math.round(text/all.length*100):0}%); ${missing} records have no usable supplied text. This is a selected exercise dataset, not a representative team-performance sample.</p><p class="muted">Routing suggestions are deterministic keyword-based triage, not model-generated conclusions. Review evidence before acting. Source update can leave analysis pending review.</p></div><div class="briefgrid" style="margin-bottom:16px"><div class="briefitem"><span class="muted">Unique records</span><strong>${all.length}</strong><span class="kpi-foot">${calls} calls · ${meetings} meetings</span></div><div class="briefitem"><span class="muted">Usable supplied text</span><strong>${text}/${all.length}</strong><span class="kpi-foot">Nonblank call transcript or meeting turn</span></div><div class="briefitem"><span class="muted">Needs review</span><strong>${pending.length}</strong><span class="kpi-foot">Missing text or unconfirmed suggestions</span></div></div><div class="gridEqual"><div class="card"><h3>Routing assignments</h3>${Object.entries(counts).sort((a,b)=>b[1]-a[1]).map(([r,n])=>`<div class="route-row"><span>${esc(r)}</span><strong>${n}</strong></div>`).join('')||'<p class="muted">No routes yet.</p>'}</div><div class="card"><h3>Potential follow-up review</h3>${important.map(r=>`<div class="route-row"><div><div class="route-name">${esc(r.record_ref||r.source_id.slice(0,8))} · ${esc(titleOf(r))}</div><div class="route-desc">${esc(textOf(r).slice(0,145))}${textOf(r).length>145?'…':''}</div></div><button class="linkbtn" data-open="${esc(r.key)}">Inspect</button></div>`).join('')||'<p class="muted">No text-backed follow-up suggestions to display yet.</p>'}</div></div><div class="notice warning">Do not infer signed deals, pipeline value, confirmed account relationships, or task ownership unless the supplied record explicitly supports it. The manager brief is computed from current imported data; it is not an externally verified performance report.</div>`:`<div class="empty"><strong>Brief not yet available</strong>Import both JSON deliveries to build the brief from supplied records.</div>`;
+}
+function renderHistory(){$('importHistory').innerHTML=state.history.length?state.history.slice(0,10).map(h=>`<div class="route-row" style="margin-bottom:8px"><div><div class="route-name">${esc(h.batch)} · rev ${h.revision}</div><div class="route-desc">${esc(h.at)} · ${h.received} received · ${h.added} added · ${h.updated} updated · ${h.ignored} ignored</div></div><span class="pill">${h.total} total</span></div>`).join(''):'No imports yet.';}
+function renderAll(){updateFilterOptions();renderOverview();renderInbox();renderBrief();renderHistory();}
+function openDetail(key){
+ const r=state.records[key];if(!r)return;state.selectedKey=key;
+ document.querySelectorAll('main>section').forEach(s=>s.classList.add('hidden'));$('page-detail').classList.remove('hidden');
+ $('detailTitle').textContent=`${r.record_ref||r.source_type} · ${titleOf(r)}`;$('detailSubtitle').textContent=`${r.source_type.toUpperCase()} · ${r.source_id} · ${dateOf(r)} · applied revision ${r.applied_revision}`;
+ const raw=JSON.stringify(r.payload,null,2),txt=textOf(r);
+ $('detailEvidence').innerHTML=`<h3>Source evidence</h3><div class="detail-meta"><span class="pill">${esc(r.source_type)}</span>${pillFor(r)}<span class="pill">Revision ${r.applied_revision}</span>${r.manual_override?'<span class="pill good">Manual route</span>':''}</div><div class="detail-section"><h4>Supplied conversation text</h4>${txt?`<div class="transcript">${esc(txt)}</div>`:'<div class="notice warning">No usable supplied text. This does not prove the conversation never happened; do not create a substantive summary.</div>'}</div><div class="detail-section"><h4>Raw source payload</h4><details><summary>Show source JSON</summary><pre>${esc(raw)}</pre></details></div><div class="detail-section"><h4>Evidence limits</h4><p class="muted">Call text is plain text and does not support reliable speaker timing. Meeting text is shown with supplied speaker labels where available. Do not infer identities or ownership beyond the source fields.</p></div>`;
+ $('detailActions').innerHTML=`<h3>Routing decision</h3><p class="muted">Suggested route is separate from your saved manual route. A route correction survives imports and refreshes in this browser.</p><div class="detail-section"><h4>Automated suggestion</h4><p>${esc((r.suggested_routes||[]).join(' · '))}</p><p class="muted">${esc(r.route_reason||'No reason available.')}</p><h4>Next action suggestion</h4><p>${esc(r.next_action||'Review the source.')}</p></div><div class="formrow"><label for="routeSelect">Manual route (choose one or more by selecting a primary route)</label><select id="routeSelect">${ROUTES.map(x=>`<option ${activeRoutes(r).includes(x)?'selected':''} value="${esc(x)}">${esc(x)}</option>`).join('')}</select></div><div class="formrow"><label for="reviewNotes">Manager review note (optional)</label><textarea id="reviewNotes" placeholder="Record a source-backed note or decision...">${esc(r.review_notes||'')}</textarea></div><div class="buttonrow"><button class="primary" id="saveRoute">Save manual route</button><button id="markReviewed">Mark reviewed</button><button class="danger" id="resetRoute">Reset to suggestion</button></div><div id="detailMessage" style="margin-top:12px"></div>`;
+ $('saveRoute').onclick=()=>{const route=$('routeSelect').value;r.manual_routes=[route];r.manual_override=true;r.review_notes=$('reviewNotes').value;r.reviewed=false;persist();renderAll();openDetail(key);$('detailMessage').innerHTML='<span class="pill good">Manual route saved</span>';};
+ $('markReviewed').onclick=()=>{r.reviewed=true;r.review_state='ready';r.analysis_revision=r.applied_revision;r.review_notes=$('reviewNotes').value;persist();renderAll();openDetail(key);$('detailMessage').innerHTML='<span class="pill good">Marked reviewed</span>';};
+ $('resetRoute').onclick=()=>{r.manual_routes=null;r.manual_override=false;r.reviewed=false;persist();renderAll();openDetail(key);$('detailMessage').innerHTML='<span class="pill warn">Manual override cleared</span>';};
+}
+function showPage(name){document.querySelectorAll('main>section').forEach(s=>s.classList.add('hidden'));$(`page-${name}`).classList.remove('hidden');document.querySelectorAll('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.page===name));if(name==='inbox')renderInbox();}
+document.querySelectorAll('.navbtn').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
+$('goInbox').onclick=()=>showPage('inbox');$('backInbox').onclick=()=>showPage('inbox');
+document.addEventListener('click',e=>{const b=e.target.closest('[data-open]');if(b)openDetail(b.dataset.open);});
+['personFilter','typeFilter','routeFilter','reviewFilter'].forEach(id=>$(id).addEventListener('change',renderOverview));
+$('clearFilters').onclick=()=>{['personFilter','typeFilter','routeFilter','reviewFilter'].forEach(id=>$(id).value='');renderOverview();};
+['searchInput','inboxType','inboxRoute','inboxState'].forEach(id=>$(id).addEventListener(id==='searchInput'?'input':'change',renderInbox));
+$('initialFile').addEventListener('change',async()=>{try{initialEnvelope=await fileEnvelope('initialFile');showImportMessage(`Loaded ${initialEnvelope.records?.length||0} records from ${initialEnvelope.batch_id||'initial delivery'}. Click Import initial to apply.`);}catch(e){showImportMessage(e.message,'bad');}});
+$('updateFile').addEventListener('change',async()=>{try{updateEnvelope=await fileEnvelope('updateFile');showImportMessage(`Loaded ${updateEnvelope.records?.length||0} records from ${updateEnvelope.batch_id||'update delivery'}. Click Import update to apply.`);}catch(e){showImportMessage(e.message,'bad');}});
+$('importInitial').onclick=async()=>{try{initialEnvelope=initialEnvelope||await fileEnvelope('initialFile');recordBatch(initialEnvelope,'Initial import');}catch(e){showImportMessage(e.message,'bad');}};
+$('importUpdate').onclick=async()=>{try{updateEnvelope=updateEnvelope||await fileEnvelope('updateFile');recordBatch(updateEnvelope,'Update import');}catch(e){showImportMessage(e.message,'bad');}};
+$('repeatInitial').onclick=async()=>{try{initialEnvelope=initialEnvelope||await fileEnvelope('initialFile');recordBatch(initialEnvelope,'Repeat initial');}catch(e){showImportMessage(e.message,'bad');}};
+$('applyBoth').onclick=async()=>{try{initialEnvelope=initialEnvelope||await fileEnvelope('initialFile');updateEnvelope=updateEnvelope||await fileEnvelope('updateFile');recordBatch(initialEnvelope,'Initial import');recordBatch(updateEnvelope,'Update import');}catch(e){showImportMessage(e.message,'bad');}};
+function buildExport(){
+ const all=values(),outputs=[],manifest=[];
+ for(const r of all){
+  const routes=activeRoutes(r),base=`outputs/${r.source_type}/${r.record_ref||r.source_id}`;
+  const paths=[];
+  routes.forEach((route,i)=>{const safe=route.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');const path=`${base}/${safe||'review'}.json`;paths.push(path);outputs.push({path,content:{record_ref:r.record_ref,source_type:r.source_type,source_id:r.source_id,route,source_revision:r.applied_revision,review_state:reviewState(r),analysis_freshness:r.analysis_revision===r.applied_revision?'current':'stale',summary:hasText(r)?`Conversation text available (${textOf(r).length} characters). Review the evidence before finalising analysis.`:'No usable supplied text; substantive analysis intentionally withheld.',evidence_excerpt:hasText(r)?textOf(r).slice(0,500):null,next_action:r.next_action||null,route_reason:r.route_reason||null,manual_override:!!r.manual_override,review_notes:r.review_notes||null}});});
+  manifest.push({record_ref:r.record_ref,source_type:r.source_type,source_id:r.source_id,applied_source_revision:r.applied_revision,routes,output_paths:paths,processing_state:reviewState(r),manual_override:!!r.manual_override,analysis_freshness:r.analysis_revision===r.applied_revision?'current':'stale'});
+ }
+ return {generated_at:new Date().toISOString(),timezone:'Asia/Kolkata',unique_source_records:all.length,manifest,outputs};
+}
+function download(name,data,type='application/json'){const blob=new Blob([typeof data==='string'?data:JSON.stringify(data,null,2)],{type});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+$('exportBtn').onclick=$('exportBundle').onclick=()=>download('nexora-export.json',buildExport());
+$('exportManifest').onclick=()=>download('manifest.json',buildExport().manifest);
+$('exportCSV').onclick=()=>{const m=buildExport().manifest;const cols=['record_ref','source_type','source_id','applied_source_revision','routes','output_paths','processing_state','manual_override','analysis_freshness'];const csv=[cols.join(','),...m.map(r=>cols.map(c=>'"'+String(Array.isArray(r[c])?r[c].join(' | '):r[c]??'').replace(/"/g,'""')+'"').join(','))].join('\n');download('manifest.csv',csv,'text/csv');};
+$('downloadBrief').onclick=()=>download('nexora-leadership-insights-2026-08-21.json',{date:'2026-08-21',timezone:'Asia/Kolkata',summary:$('briefContent').innerText,unique_records:values().length,transcript_coverage:values().filter(hasText).length});
+$('resetBtn').onclick=$('demoReset').onclick=()=>{if(confirm('Clear all imported records, history and saved manual routes from this browser?')){state.records={};state.history=[];state.selectedKey=null;persist();renderAll();showPage('overview');showImportMessage('Local state cleared. You can start the replay from the initial delivery.');}};
+restore();for(const r of values())ensureAnalysis(r);renderAll();
+})();
+</script>
+</body></html>
