@@ -1,0 +1,2061 @@
+{
+  "generated_at": "2026-10-23T05:45:27.181Z",
+  "timezone": "Asia/Kolkata",
+  "unique_source_records": 44,
+  "manifest": [
+    {
+      "record_ref": "C01",
+      "source_type": "call",
+      "source_id": "2ec4404c-beee-5377-a63c-aab701da08ed",
+      "applied_source_revision": 1,
+      "routes": [
+        "Deal next steps",
+        "Sales coaching",
+        "Internal / vendor note"
+      ],
+      "output_paths": [
+        "outputs/call/C01/deal-next-steps.json",
+        "outputs/call/C01/sales-coaching.json",
+        "outputs/call/C01/internal-vendor-note.json"
+      ],
+      "processing_state": "pending",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C02",
+      "source_type": "call",
+      "source_id": "4b870624-8aad-5315-a60e-0db95981cf99",
+      "applied_source_revision": 1,
+      "routes": [
+        "Human review"
+      ],
+      "output_paths": [
+        "outputs/call/C02/human-review.json"
+      ],
+      "processing_state": "pending",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C03",
+      "source_type": "call",
+      "source_id": "20d509ba-d589-5334-9aef-ea4ce6105b1a",
+      "applied_source_revision": 1,
+      "routes": [
+        "Customer follow-up",
+        "Deal next steps",
+        "Internal / vendor note"
+      ],
+      "output_paths": [
+        "outputs/call/C03/customer-follow-up.json",
+        "outputs/call/C03/deal-next-steps.json",
+        "outputs/call/C03/internal-vendor-note.json"
+      ],
+      "processing_state": "pending",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C04",
+      "source_type": "call",
+      "source_id": "bcdcbf56-d338-5c78-9a97-42c2fc1c9931",
+      "applied_source_revision": 1,
+      "routes": [
+        "Deal next steps",
+        "Sales coaching"
+      ],
+      "output_paths": [
+        "outputs/call/C04/deal-next-steps.json",
+        "outputs/call/C04/sales-coaching.json"
+      ],
+      "processing_state": "pending",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C05",
+      "source_type": "call",
+      "source_id": "75a6b94f-7717-5cfb-9e41-0acc94415e17",
+      "applied_source_revision": 1,
+      "routes": [
+        "Deal next steps",
+        "Sales coaching",
+        "Internal / vendor note"
+      ],
+      "output_paths": [
+        "outputs/call/C05/deal-next-steps.json",
+        "outputs/call/C05/sales-coaching.json",
+        "outputs/call/C05/internal-vendor-note.json"
+      ],
+      "processing_state": "pending",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C06",
+      "source_type": "call",
+      "source_id": "12216d5c-e254-52c6-b344-47de4c6e1ae5",
+      "applied_source_revision": 1,
+      "routes": [
+        "Sales coaching",
+        "Internal / vendor note"
+      ],
+      "output_paths": [
+        "outputs/call/C06/sales-coaching.json",
+        "outputs/call/C06/internal-vendor-note.json"
+      ],
+      "processing_state": "pending",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C07",
+      "source_type": "call",
+      "source_id": "428817fa-7e9e-5418-a7d4-bb396d28dfbf",
+      "applied_source_revision": 1,
+      "routes": [
+        "Customer follow-up",
+        "Deal next steps",
+        "Internal / vendor note"
+      ],
+      "output_paths": [
+        "outputs/call/C07/customer-follow-up.json",
+        "outputs/call/C07/deal-next-steps.json",
+        "outputs/call/C07/internal-vendor-note.json"
+      ],
+      "processing_state": "pending",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C08",
+      "source_type": "call",
+      "source_id": "129497b2-8e1d-5e01-919c-e8a852b5ff68",
+      "applied_source_revision": 1,
+      "routes": [
+        "Customer follow-up",
+        "Deal next steps",
+        "Internal / vendor note"
+      ],
+      "output_paths": [
+        "outputs/call/C08/customer-follow-up.json",
+        "outputs/call/C08/deal-next-steps.json",
+        "outputs/call/C08/internal-vendor-note.json"
+      ],
+      "processing_state": "pending",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C09",
+      "source_type": "call",
+      "source_id": "4a1de681-f884-55e8-b1ad-de22d17cd959",
+      "applied_source_revision": 1,
+      "routes": [
+        "Deal next steps",
+        "Sales coaching",
+        "Internal / vendor note"
+      ],
+      "output_paths": [
+        "outputs/call/C09/deal-next-steps.json",
+        "outputs/call/C09/sales-coaching.json",
+        "outputs/call/C09/internal-vendor-note.json"
+      ],
+      "processing_state": "pending",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C10",
+      "source_type": "call",
+      "source_id": "b747f592-810e-583c-9b81-8db5ab035806",
+      "applied_source_revision": 1,
+      "routes": [
+        "Customer follow-up",
+        "Deal next steps",
+        "Internal / vendor note"
+      ],
+      "output_paths": [
+        "outputs/call/C10/customer-follow-up.json",
+        "outputs/call/C10/deal-next-steps.json",
+        "outputs/call/C10/internal-vendor-note.json"
+      ],
+      "processing_state": "pending",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C11",
+      "source_type": "call",
+      "source_id": "placeholder-call-C11",
+      "applied_source_revision": 1,
+      "routes": [
+        "Human review"
+      ],
+      "output_paths": [
+        "outputs/call/C11/human-review.json"
+      ],
+      "processing_state": "missing",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C12",
+      "source_type": "call",
+      "source_id": "placeholder-call-C12",
+      "applied_source_revision": 1,
+      "routes": [
+        "Human review"
+      ],
+      "output_paths": [
+        "outputs/call/C12/human-review.json"
+      ],
+      "processing_state": "missing",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C13",
+      "source_type": "call",
+      "source_id": "placeholder-call-C13",
+      "applied_source_revision": 1,
+      "routes": [
+        "Human review"
+      ],
+      "output_paths": [
+        "outputs/call/C13/human-review.json"
+      ],
+      "processing_state": "missing",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C14",
+      "source_type": "call",
+      "source_id": "placeholder-call-C14",
+      "applied_source_revision": 1,
+      "routes": [
+        "Human review"
+      ],
+      "output_paths": [
+        "outputs/call/C14/human-review.json"
+      ],
+      "processing_state": "missing",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C15",
+      "source_type": "call",
+      "source_id": "placeholder-call-C15",
+      "applied_source_revision": 1,
+      "routes": [
+        "Human review"
+      ],
+      "output_paths": [
+        "outputs/call/C15/human-review.json"
+      ],
+      "processing_state": "missing",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C16",
+      "source_type": "call",
+      "source_id": "placeholder-call-C16",
+      "applied_source_revision": 1,
+      "routes": [
+        "Human review"
+      ],
+      "output_paths": [
+        "outputs/call/C16/human-review.json"
+      ],
+      "processing_state": "missing",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C17",
+      "source_type": "call",
+      "source_id": "placeholder-call-C17",
+      "applied_source_revision": 1,
+      "routes": [
+        "Human review"
+      ],
+      "output_paths": [
+        "outputs/call/C17/human-review.json"
+      ],
+      "processing_state": "missing",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C18",
+      "source_type": "call",
+      "source_id": "placeholder-call-C18",
+      "applied_source_revision": 1,
+      "routes": [
+        "Human review"
+      ],
+      "output_paths": [
+        "outputs/call/C18/human-review.json"
+      ],
+      "processing_state": "missing",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C19",
+      "source_type": "call",
+      "source_id": "placeholder-call-C19",
+      "applied_source_revision": 1,
+      "routes": [
+        "Human review"
+      ],
+      "output_paths": [
+        "outputs/call/C19/human-review.json"
+      ],
+      "processing_state": "missing",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C20",
+      "source_type": "call",
+      "source_id": "placeholder-call-C20",
+      "applied_source_revision": 1,
+      "routes": [
+        "Human review"
+      ],
+      "output_paths": [
+        "outputs/call/C20/human-review.json"
+      ],
+      "processing_state": "missing",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C21",
+      "source_type": "call",
+      "source_id": "placeholder-call-C21",
+      "applied_source_revision": 1,
+      "routes": [
+        "Human review"
+      ],
+      "output_paths": [
+        "outputs/call/C21/human-review.json"
+      ],
+      "processing_state": "missing",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C22",
+      "source_type": "call",
+      "source_id": "placeholder-call-C22",
+      "applied_source_revision": 1,
+      "routes": [
+        "Human review"
+      ],
+      "output_paths": [
+        "outputs/call/C22/human-review.json"
+      ],
+      "processing_state": "missing",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C23",
+      "source_type": "call",
+      "source_id": "placeholder-call-C23",
+      "applied_source_revision": 1,
+      "routes": [
+        "Human review"
+      ],
+      "output_paths": [
+        "outputs/call/C23/human-review.json"
+      ],
+      "processing_state": "missing",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C24",
+      "source_type": "call",
+      "source_id": "placeholder-call-C24",
+      "applied_source_revision": 1,
+      "routes": [
+        "Human review"
+      ],
+      "output_paths": [
+        "outputs/call/C24/human-review.json"
+      ],
+      "processing_state": "missing",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C25",
+      "source_type": "call",
+      "source_id": "placeholder-call-C25",
+      "applied_source_revision": 1,
+      "routes": [
+        "Human review"
+      ],
+      "output_paths": [
+        "outputs/call/C25/human-review.json"
+      ],
+      "processing_state": "missing",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C26",
+      "source_type": "call",
+      "source_id": "placeholder-call-C26",
+      "applied_source_revision": 1,
+      "routes": [
+        "Human review"
+      ],
+      "output_paths": [
+        "outputs/call/C26/human-review.json"
+      ],
+      "processing_state": "missing",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C27",
+      "source_type": "call",
+      "source_id": "placeholder-call-C27",
+      "applied_source_revision": 1,
+      "routes": [
+        "Human review"
+      ],
+      "output_paths": [
+        "outputs/call/C27/human-review.json"
+      ],
+      "processing_state": "missing",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C28",
+      "source_type": "call",
+      "source_id": "placeholder-call-C28",
+      "applied_source_revision": 1,
+      "routes": [
+        "Human review"
+      ],
+      "output_paths": [
+        "outputs/call/C28/human-review.json"
+      ],
+      "processing_state": "missing",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C29",
+      "source_type": "call",
+      "source_id": "placeholder-call-C29",
+      "applied_source_revision": 1,
+      "routes": [
+        "Human review"
+      ],
+      "output_paths": [
+        "outputs/call/C29/human-review.json"
+      ],
+      "processing_state": "missing",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "C30",
+      "source_type": "call",
+      "source_id": "placeholder-call-C30",
+      "applied_source_revision": 1,
+      "routes": [
+        "Human review"
+      ],
+      "output_paths": [
+        "outputs/call/C30/human-review.json"
+      ],
+      "processing_state": "missing",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "M01",
+      "source_type": "meeting",
+      "source_id": "cb5cecac-e68d-52b7-b10b-b0c748efc467",
+      "applied_source_revision": 1,
+      "routes": [
+        "Deal next steps",
+        "Internal / vendor note"
+      ],
+      "output_paths": [
+        "outputs/meeting/M01/deal-next-steps.json",
+        "outputs/meeting/M01/internal-vendor-note.json"
+      ],
+      "processing_state": "pending",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "M02",
+      "source_type": "meeting",
+      "source_id": "1a21c409-c050-5787-90af-2667e057e1b6",
+      "applied_source_revision": 1,
+      "routes": [
+        "Customer follow-up",
+        "Deal next steps",
+        "Sales coaching",
+        "Internal / vendor note"
+      ],
+      "output_paths": [
+        "outputs/meeting/M02/customer-follow-up.json",
+        "outputs/meeting/M02/deal-next-steps.json",
+        "outputs/meeting/M02/sales-coaching.json",
+        "outputs/meeting/M02/internal-vendor-note.json"
+      ],
+      "processing_state": "pending",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "M03",
+      "source_type": "meeting",
+      "source_id": "398672e7-62dd-5afd-846d-0237d49792fb",
+      "applied_source_revision": 1,
+      "routes": [
+        "Customer follow-up",
+        "Deal next steps",
+        "Internal / vendor note"
+      ],
+      "output_paths": [
+        "outputs/meeting/M03/customer-follow-up.json",
+        "outputs/meeting/M03/deal-next-steps.json",
+        "outputs/meeting/M03/internal-vendor-note.json"
+      ],
+      "processing_state": "pending",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "M04",
+      "source_type": "meeting",
+      "source_id": "b0f79b3d-37ba-52f9-b2bc-58b159dd6d91",
+      "applied_source_revision": 1,
+      "routes": [
+        "Deal next steps",
+        "Sales coaching",
+        "Internal / vendor note"
+      ],
+      "output_paths": [
+        "outputs/meeting/M04/deal-next-steps.json",
+        "outputs/meeting/M04/sales-coaching.json",
+        "outputs/meeting/M04/internal-vendor-note.json"
+      ],
+      "processing_state": "pending",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "M05",
+      "source_type": "meeting",
+      "source_id": "placeholder-meeting-M05",
+      "applied_source_revision": 1,
+      "routes": [
+        "Human review"
+      ],
+      "output_paths": [
+        "outputs/meeting/M05/human-review.json"
+      ],
+      "processing_state": "missing",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "M06",
+      "source_type": "meeting",
+      "source_id": "657b9e9d-9472-5b01-a127-a648ad7e8cf7",
+      "applied_source_revision": 1,
+      "routes": [
+        "Customer follow-up",
+        "Deal next steps",
+        "Internal / vendor note"
+      ],
+      "output_paths": [
+        "outputs/meeting/M06/customer-follow-up.json",
+        "outputs/meeting/M06/deal-next-steps.json",
+        "outputs/meeting/M06/internal-vendor-note.json"
+      ],
+      "processing_state": "pending",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "M07",
+      "source_type": "meeting",
+      "source_id": "4f304fff-fd40-5cfc-a366-0a134c445c2a",
+      "applied_source_revision": 2,
+      "routes": [
+        "Customer follow-up",
+        "Deal next steps",
+        "Internal / vendor note"
+      ],
+      "output_paths": [
+        "outputs/meeting/M07/customer-follow-up.json",
+        "outputs/meeting/M07/deal-next-steps.json",
+        "outputs/meeting/M07/internal-vendor-note.json"
+      ],
+      "processing_state": "pending",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "M08",
+      "source_type": "meeting",
+      "source_id": "placeholder-meeting-M08",
+      "applied_source_revision": 1,
+      "routes": [
+        "Human review"
+      ],
+      "output_paths": [
+        "outputs/meeting/M08/human-review.json"
+      ],
+      "processing_state": "missing",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "M09",
+      "source_type": "meeting",
+      "source_id": "4b5b9192-f3fc-505a-8e77-4d2ffaa54594",
+      "applied_source_revision": 1,
+      "routes": [
+        "Internal / vendor note"
+      ],
+      "output_paths": [
+        "outputs/meeting/M09/internal-vendor-note.json"
+      ],
+      "processing_state": "pending",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "M10",
+      "source_type": "meeting",
+      "source_id": "337f297d-9385-5b82-9e54-5019c1ed912c",
+      "applied_source_revision": 1,
+      "routes": [
+        "Customer follow-up",
+        "Deal next steps",
+        "Internal / vendor note"
+      ],
+      "output_paths": [
+        "outputs/meeting/M10/customer-follow-up.json",
+        "outputs/meeting/M10/deal-next-steps.json",
+        "outputs/meeting/M10/internal-vendor-note.json"
+      ],
+      "processing_state": "pending",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "M11",
+      "source_type": "meeting",
+      "source_id": "placeholder-meeting-M11",
+      "applied_source_revision": 1,
+      "routes": [
+        "Human review"
+      ],
+      "output_paths": [
+        "outputs/meeting/M11/human-review.json"
+      ],
+      "processing_state": "missing",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "M12",
+      "source_type": "meeting",
+      "source_id": "placeholder-meeting-M12",
+      "applied_source_revision": 1,
+      "routes": [
+        "Human review"
+      ],
+      "output_paths": [
+        "outputs/meeting/M12/human-review.json"
+      ],
+      "processing_state": "missing",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "M13",
+      "source_type": "meeting",
+      "source_id": "placeholder-meeting-M13",
+      "applied_source_revision": 1,
+      "routes": [
+        "Human review"
+      ],
+      "output_paths": [
+        "outputs/meeting/M13/human-review.json"
+      ],
+      "processing_state": "missing",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    },
+    {
+      "record_ref": "M14",
+      "source_type": "meeting",
+      "source_id": "placeholder-meeting-M14",
+      "applied_source_revision": 1,
+      "routes": [
+        "Human review"
+      ],
+      "output_paths": [
+        "outputs/meeting/M14/human-review.json"
+      ],
+      "processing_state": "missing",
+      "manual_override": false,
+      "analysis_freshness": "current"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "outputs/call/C01/deal-next-steps.json",
+      "content": {
+        "record_ref": "C01",
+        "source_type": "call",
+        "source_id": "2ec4404c-beee-5377-a63c-aab701da08ed",
+        "route": "Deal next steps",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (1266 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Hello, Pranav here. Hi Pranav, Arun calling from SpendNest. I wanted to ask about Harborlight Advisory. Sorry, who is this? Arun from SpendNest. I was hoping to discuss Harborlight Advisory with you. Why are you calling? We work with outsourced finance leadership firms and—no, I asked why you have called me. Right, I wanted to understand whether a partnership might be relevant. I don't know how I ended up on your list. I didn't ask for this call, and I'm not interested. This number is for my wor",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C01/sales-coaching.json",
+      "content": {
+        "record_ref": "C01",
+        "source_type": "call",
+        "source_id": "2ec4404c-beee-5377-a63c-aab701da08ed",
+        "route": "Sales coaching",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (1266 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Hello, Pranav here. Hi Pranav, Arun calling from SpendNest. I wanted to ask about Harborlight Advisory. Sorry, who is this? Arun from SpendNest. I was hoping to discuss Harborlight Advisory with you. Why are you calling? We work with outsourced finance leadership firms and—no, I asked why you have called me. Right, I wanted to understand whether a partnership might be relevant. I don't know how I ended up on your list. I didn't ask for this call, and I'm not interested. This number is for my wor",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C01/internal-vendor-note.json",
+      "content": {
+        "record_ref": "C01",
+        "source_type": "call",
+        "source_id": "2ec4404c-beee-5377-a63c-aab701da08ed",
+        "route": "Internal / vendor note",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (1266 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Hello, Pranav here. Hi Pranav, Arun calling from SpendNest. I wanted to ask about Harborlight Advisory. Sorry, who is this? Arun from SpendNest. I was hoping to discuss Harborlight Advisory with you. Why are you calling? We work with outsourced finance leadership firms and—no, I asked why you have called me. Right, I wanted to understand whether a partnership might be relevant. I don't know how I ended up on your list. I didn't ask for this call, and I'm not interested. This number is for my wor",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C02/human-review.json",
+      "content": {
+        "record_ref": "C02",
+        "source_type": "call",
+        "source_id": "4b870624-8aad-5315-a60e-0db95981cf99",
+        "route": "Human review",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (480 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Good morning, you've reached Fernhaven Group. Kavya speaking. How may I help? Hello Kavya. Could I speak with Leela, please? Leela? Let me check whether she is around. Please hold for a moment. Of course, thank you. It looks as though she isn't in the office today. Would you like to leave a message with me, or would you prefer her voicemail? Her voicemail would be fine, thank you. Certainly, I'll put you through to the mailbox now. Thanks for calling. Thank you for your help.",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C03/customer-follow-up.json",
+      "content": {
+        "record_ref": "C03",
+        "source_type": "call",
+        "source_id": "20d509ba-d589-5334-9aef-ea4ce6105b1a",
+        "route": "Customer follow-up",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (1683 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Please say your name after the signal and the screening service will try to connect you. Hello? Hi Milan, Kiran here from SpendNest. How are you? Sorry, I can hardly hear you. Who is this? Kiran. We discussed developer access a while ago, and you asked for about five weeks before following up. I don't want to cut you off, but the sound is very faint. Can you hear me any better now? Slightly, yes. I'm calling about the API access your development team was considering. Have you got an order refere",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C03/deal-next-steps.json",
+      "content": {
+        "record_ref": "C03",
+        "source_type": "call",
+        "source_id": "20d509ba-d589-5334-9aef-ea4ce6105b1a",
+        "route": "Deal next steps",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (1683 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Please say your name after the signal and the screening service will try to connect you. Hello? Hi Milan, Kiran here from SpendNest. How are you? Sorry, I can hardly hear you. Who is this? Kiran. We discussed developer access a while ago, and you asked for about five weeks before following up. I don't want to cut you off, but the sound is very faint. Can you hear me any better now? Slightly, yes. I'm calling about the API access your development team was considering. Have you got an order refere",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C03/internal-vendor-note.json",
+      "content": {
+        "record_ref": "C03",
+        "source_type": "call",
+        "source_id": "20d509ba-d589-5334-9aef-ea4ce6105b1a",
+        "route": "Internal / vendor note",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (1683 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Please say your name after the signal and the screening service will try to connect you. Hello? Hi Milan, Kiran here from SpendNest. How are you? Sorry, I can hardly hear you. Who is this? Kiran. We discussed developer access a while ago, and you asked for about five weeks before following up. I don't want to cut you off, but the sound is very faint. Can you hear me any better now? Slightly, yes. I'm calling about the API access your development team was considering. Have you got an order refere",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C04/deal-next-steps.json",
+      "content": {
+        "record_ref": "C04",
+        "source_type": "call",
+        "source_id": "bcdcbf56-d338-5c78-9a97-42c2fc1c9931",
+        "route": "Deal next steps",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (938 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Please record your name and the purpose of your call so the recipient can decide whether to answer. Arun from SpendNest, following up on our earlier conversation about expense software for Lanternpath Media. Thank you. Please hold. The person you called is unavailable. You may leave a further message after the signal. Hello, this is a message for Ritesh. Arun from SpendNest here. I'm following up on your consideration of our expense platform for Lanternpath Media. My understanding is that our in",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C04/sales-coaching.json",
+      "content": {
+        "record_ref": "C04",
+        "source_type": "call",
+        "source_id": "bcdcbf56-d338-5c78-9a97-42c2fc1c9931",
+        "route": "Sales coaching",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (938 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Please record your name and the purpose of your call so the recipient can decide whether to answer. Arun from SpendNest, following up on our earlier conversation about expense software for Lanternpath Media. Thank you. Please hold. The person you called is unavailable. You may leave a further message after the signal. Hello, this is a message for Ritesh. Arun from SpendNest here. I'm following up on your consideration of our expense platform for Lanternpath Media. My understanding is that our in",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C05/deal-next-steps.json",
+      "content": {
+        "record_ref": "C05",
+        "source_type": "call",
+        "source_id": "75a6b94f-7717-5cfb-9e41-0acc94415e17",
+        "route": "Deal next steps",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (1528 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Hello? Good evening. Who's speaking? Meera here. To be upfront, this is an introductory sales call. Could I have about forty seconds to explain? I can't hear properly; there's an echo. Is the sound clearer now? A little. Go ahead. I'll be brief. I'm with SpendNest. We offer expense software to bring purchasing and vendor processes together: approvals, documents and payments, with a dashboard showing where money is being spent. For companies operating several stores, we also offer cards so they c",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C05/sales-coaching.json",
+      "content": {
+        "record_ref": "C05",
+        "source_type": "call",
+        "source_id": "75a6b94f-7717-5cfb-9e41-0acc94415e17",
+        "route": "Sales coaching",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (1528 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Hello? Good evening. Who's speaking? Meera here. To be upfront, this is an introductory sales call. Could I have about forty seconds to explain? I can't hear properly; there's an echo. Is the sound clearer now? A little. Go ahead. I'll be brief. I'm with SpendNest. We offer expense software to bring purchasing and vendor processes together: approvals, documents and payments, with a dashboard showing where money is being spent. For companies operating several stores, we also offer cards so they c",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C05/internal-vendor-note.json",
+      "content": {
+        "record_ref": "C05",
+        "source_type": "call",
+        "source_id": "75a6b94f-7717-5cfb-9e41-0acc94415e17",
+        "route": "Internal / vendor note",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (1528 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Hello? Good evening. Who's speaking? Meera here. To be upfront, this is an introductory sales call. Could I have about forty seconds to explain? I can't hear properly; there's an echo. Is the sound clearer now? A little. Go ahead. I'll be brief. I'm with SpendNest. We offer expense software to bring purchasing and vendor processes together: approvals, documents and payments, with a dashboard showing where money is being spent. For companies operating several stores, we also offer cards so they c",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C06/sales-coaching.json",
+      "content": {
+        "record_ref": "C06",
+        "source_type": "call",
+        "source_id": "12216d5c-e254-52c6-b344-47de4c6e1ae5",
+        "route": "Sales coaching",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (1625 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Hello? Good evening, Mr Nikhil. Good evening. Ravi here. I'll say at the start that this is a cold call. Could I take about forty seconds to explain the purpose? If it isn't relevant, you can end the call. What is it about? I'll keep it short. We work with retail and distribution businesses that want to replace manual handling of store expenses and supplier payments. SpendNest brings invoices, vendor payments and documents into one dashboard. You can see which location is spending what, manage d",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C06/internal-vendor-note.json",
+      "content": {
+        "record_ref": "C06",
+        "source_type": "call",
+        "source_id": "12216d5c-e254-52c6-b344-47de4c6e1ae5",
+        "route": "Internal / vendor note",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (1625 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Hello? Good evening, Mr Nikhil. Good evening. Ravi here. I'll say at the start that this is a cold call. Could I take about forty seconds to explain the purpose? If it isn't relevant, you can end the call. What is it about? I'll keep it short. We work with retail and distribution businesses that want to replace manual handling of store expenses and supplier payments. SpendNest brings invoices, vendor payments and documents into one dashboard. You can see which location is spending what, manage d",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C07/customer-follow-up.json",
+      "content": {
+        "record_ref": "C07",
+        "source_type": "call",
+        "source_id": "428817fa-7e9e-5418-a7d4-bb396d28dfbf",
+        "route": "Customer follow-up",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (1548 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Hello, is this Mr Aditya at Willowbank Advisory? Yes. Dev calling from SpendNest. Is this an okay time for a conversation? Yes, go ahead. Thank you. I wanted to ask about a possible partnership. Do you help clients incorporate companies overseas as well as domestically? We support several overseas jurisdictions, yes. And do you help those companies open accounts after incorporation? The reason I ask is that SpendNest offers virtual accounts for businesses once the company has been formed. Are yo",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C07/deal-next-steps.json",
+      "content": {
+        "record_ref": "C07",
+        "source_type": "call",
+        "source_id": "428817fa-7e9e-5418-a7d4-bb396d28dfbf",
+        "route": "Deal next steps",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (1548 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Hello, is this Mr Aditya at Willowbank Advisory? Yes. Dev calling from SpendNest. Is this an okay time for a conversation? Yes, go ahead. Thank you. I wanted to ask about a possible partnership. Do you help clients incorporate companies overseas as well as domestically? We support several overseas jurisdictions, yes. And do you help those companies open accounts after incorporation? The reason I ask is that SpendNest offers virtual accounts for businesses once the company has been formed. Are yo",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C07/internal-vendor-note.json",
+      "content": {
+        "record_ref": "C07",
+        "source_type": "call",
+        "source_id": "428817fa-7e9e-5418-a7d4-bb396d28dfbf",
+        "route": "Internal / vendor note",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (1548 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Hello, is this Mr Aditya at Willowbank Advisory? Yes. Dev calling from SpendNest. Is this an okay time for a conversation? Yes, go ahead. Thank you. I wanted to ask about a possible partnership. Do you help clients incorporate companies overseas as well as domestically? We support several overseas jurisdictions, yes. And do you help those companies open accounts after incorporation? The reason I ask is that SpendNest offers virtual accounts for businesses once the company has been formed. Are yo",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C08/customer-follow-up.json",
+      "content": {
+        "record_ref": "C08",
+        "source_type": "call",
+        "source_id": "129497b2-8e1d-5e01-919c-e8a852b5ff68",
+        "route": "Customer follow-up",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (1583 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Hello? Good evening, Mr Raghav. Good evening. Meera speaking. This is a cold introduction, and I'd like about forty seconds to explain why I'm calling. What is it regarding? I'm from SpendNest. We help companies bring fragmented expense and payables processes together: supplier records, invoice processing, local expenses, advances and reimbursements. Cards and instant payments can have spending limits, so the company can see what each fulfilment location or manager is spending. The same system c",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C08/deal-next-steps.json",
+      "content": {
+        "record_ref": "C08",
+        "source_type": "call",
+        "source_id": "129497b2-8e1d-5e01-919c-e8a852b5ff68",
+        "route": "Deal next steps",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (1583 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Hello? Good evening, Mr Raghav. Good evening. Meera speaking. This is a cold introduction, and I'd like about forty seconds to explain why I'm calling. What is it regarding? I'm from SpendNest. We help companies bring fragmented expense and payables processes together: supplier records, invoice processing, local expenses, advances and reimbursements. Cards and instant payments can have spending limits, so the company can see what each fulfilment location or manager is spending. The same system c",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C08/internal-vendor-note.json",
+      "content": {
+        "record_ref": "C08",
+        "source_type": "call",
+        "source_id": "129497b2-8e1d-5e01-919c-e8a852b5ff68",
+        "route": "Internal / vendor note",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (1583 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Hello? Good evening, Mr Raghav. Good evening. Meera speaking. This is a cold introduction, and I'd like about forty seconds to explain why I'm calling. What is it regarding? I'm from SpendNest. We help companies bring fragmented expense and payables processes together: supplier records, invoice processing, local expenses, advances and reimbursements. Cards and instant payments can have spending limits, so the company can see what each fulfilment location or manager is spending. The same system c",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C09/deal-next-steps.json",
+      "content": {
+        "record_ref": "C09",
+        "source_type": "call",
+        "source_id": "4a1de681-f884-55e8-b1ad-de22d17cd959",
+        "route": "Deal next steps",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (1451 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Hello, good evening, Mr Vedant. Good evening. Meera here. To be clear, this is a cold call. Could I take about forty seconds to explain the reason? If it's not relevant, you can stop me. All right. I'm with SpendNest, an expense platform. We work with businesses operating multiple stores, and I understand you have roughly a hundred and thirty locations. We bring store expenses, petty cash and supplier payments into one view, using controlled instant payments and invoice processing. Budgets and s",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C09/sales-coaching.json",
+      "content": {
+        "record_ref": "C09",
+        "source_type": "call",
+        "source_id": "4a1de681-f884-55e8-b1ad-de22d17cd959",
+        "route": "Sales coaching",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (1451 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Hello, good evening, Mr Vedant. Good evening. Meera here. To be clear, this is a cold call. Could I take about forty seconds to explain the reason? If it's not relevant, you can stop me. All right. I'm with SpendNest, an expense platform. We work with businesses operating multiple stores, and I understand you have roughly a hundred and thirty locations. We bring store expenses, petty cash and supplier payments into one view, using controlled instant payments and invoice processing. Budgets and s",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C09/internal-vendor-note.json",
+      "content": {
+        "record_ref": "C09",
+        "source_type": "call",
+        "source_id": "4a1de681-f884-55e8-b1ad-de22d17cd959",
+        "route": "Internal / vendor note",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (1451 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Hello, good evening, Mr Vedant. Good evening. Meera here. To be clear, this is a cold call. Could I take about forty seconds to explain the reason? If it's not relevant, you can stop me. All right. I'm with SpendNest, an expense platform. We work with businesses operating multiple stores, and I understand you have roughly a hundred and thirty locations. We bring store expenses, petty cash and supplier payments into one view, using controlled instant payments and invoice processing. Budgets and s",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C10/customer-follow-up.json",
+      "content": {
+        "record_ref": "C10",
+        "source_type": "call",
+        "source_id": "b747f592-810e-583c-9b81-8db5ab035806",
+        "route": "Customer follow-up",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (1232 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Hello? Hello, good evening, Mr Aniket. Yes? Meera here. Could I briefly explain why I'm calling? What is this about? We work with companies that want to move vendor handling and invoice processing away from manual steps. SpendNest brings together scheduled payments and approval workflows so managers can see more of what is happening across operations and finance. Are you calling about Meadowbrick? Yes, that's right. I don't work there anymore. I'm sorry about that. Are you with a different organ",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C10/deal-next-steps.json",
+      "content": {
+        "record_ref": "C10",
+        "source_type": "call",
+        "source_id": "b747f592-810e-583c-9b81-8db5ab035806",
+        "route": "Deal next steps",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (1232 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Hello? Hello, good evening, Mr Aniket. Yes? Meera here. Could I briefly explain why I'm calling? What is this about? We work with companies that want to move vendor handling and invoice processing away from manual steps. SpendNest brings together scheduled payments and approval workflows so managers can see more of what is happening across operations and finance. Are you calling about Meadowbrick? Yes, that's right. I don't work there anymore. I'm sorry about that. Are you with a different organ",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C10/internal-vendor-note.json",
+      "content": {
+        "record_ref": "C10",
+        "source_type": "call",
+        "source_id": "b747f592-810e-583c-9b81-8db5ab035806",
+        "route": "Internal / vendor note",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (1232 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Hello? Hello, good evening, Mr Aniket. Yes? Meera here. Could I briefly explain why I'm calling? What is this about? We work with companies that want to move vendor handling and invoice processing away from manual steps. SpendNest brings together scheduled payments and approval workflows so managers can see more of what is happening across operations and finance. Are you calling about Meadowbrick? Yes, that's right. I don't work there anymore. I'm sorry about that. Are you with a different organ",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C11/human-review.json",
+      "content": {
+        "record_ref": "C11",
+        "source_type": "call",
+        "source_id": "placeholder-call-C11",
+        "route": "Human review",
+        "source_revision": 1,
+        "review_state": "missing",
+        "analysis_freshness": "current",
+        "summary": "No usable supplied text; substantive analysis intentionally withheld.",
+        "evidence_excerpt": null,
+        "next_action": "Inspect available metadata or obtain usable conversation text before substantive analysis.",
+        "route_reason": "No usable supplied transcript is available. Do not infer a conversation outcome from missing text.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C12/human-review.json",
+      "content": {
+        "record_ref": "C12",
+        "source_type": "call",
+        "source_id": "placeholder-call-C12",
+        "route": "Human review",
+        "source_revision": 1,
+        "review_state": "missing",
+        "analysis_freshness": "current",
+        "summary": "No usable supplied text; substantive analysis intentionally withheld.",
+        "evidence_excerpt": null,
+        "next_action": "Inspect available metadata or obtain usable conversation text before substantive analysis.",
+        "route_reason": "No usable supplied transcript is available. Do not infer a conversation outcome from missing text.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C13/human-review.json",
+      "content": {
+        "record_ref": "C13",
+        "source_type": "call",
+        "source_id": "placeholder-call-C13",
+        "route": "Human review",
+        "source_revision": 1,
+        "review_state": "missing",
+        "analysis_freshness": "current",
+        "summary": "No usable supplied text; substantive analysis intentionally withheld.",
+        "evidence_excerpt": null,
+        "next_action": "Inspect available metadata or obtain usable conversation text before substantive analysis.",
+        "route_reason": "No usable supplied transcript is available. Do not infer a conversation outcome from missing text.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C14/human-review.json",
+      "content": {
+        "record_ref": "C14",
+        "source_type": "call",
+        "source_id": "placeholder-call-C14",
+        "route": "Human review",
+        "source_revision": 1,
+        "review_state": "missing",
+        "analysis_freshness": "current",
+        "summary": "No usable supplied text; substantive analysis intentionally withheld.",
+        "evidence_excerpt": null,
+        "next_action": "Inspect available metadata or obtain usable conversation text before substantive analysis.",
+        "route_reason": "No usable supplied transcript is available. Do not infer a conversation outcome from missing text.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C15/human-review.json",
+      "content": {
+        "record_ref": "C15",
+        "source_type": "call",
+        "source_id": "placeholder-call-C15",
+        "route": "Human review",
+        "source_revision": 1,
+        "review_state": "missing",
+        "analysis_freshness": "current",
+        "summary": "No usable supplied text; substantive analysis intentionally withheld.",
+        "evidence_excerpt": null,
+        "next_action": "Inspect available metadata or obtain usable conversation text before substantive analysis.",
+        "route_reason": "No usable supplied transcript is available. Do not infer a conversation outcome from missing text.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C16/human-review.json",
+      "content": {
+        "record_ref": "C16",
+        "source_type": "call",
+        "source_id": "placeholder-call-C16",
+        "route": "Human review",
+        "source_revision": 1,
+        "review_state": "missing",
+        "analysis_freshness": "current",
+        "summary": "No usable supplied text; substantive analysis intentionally withheld.",
+        "evidence_excerpt": null,
+        "next_action": "Inspect available metadata or obtain usable conversation text before substantive analysis.",
+        "route_reason": "No usable supplied transcript is available. Do not infer a conversation outcome from missing text.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C17/human-review.json",
+      "content": {
+        "record_ref": "C17",
+        "source_type": "call",
+        "source_id": "placeholder-call-C17",
+        "route": "Human review",
+        "source_revision": 1,
+        "review_state": "missing",
+        "analysis_freshness": "current",
+        "summary": "No usable supplied text; substantive analysis intentionally withheld.",
+        "evidence_excerpt": null,
+        "next_action": "Inspect available metadata or obtain usable conversation text before substantive analysis.",
+        "route_reason": "No usable supplied transcript is available. Do not infer a conversation outcome from missing text.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C18/human-review.json",
+      "content": {
+        "record_ref": "C18",
+        "source_type": "call",
+        "source_id": "placeholder-call-C18",
+        "route": "Human review",
+        "source_revision": 1,
+        "review_state": "missing",
+        "analysis_freshness": "current",
+        "summary": "No usable supplied text; substantive analysis intentionally withheld.",
+        "evidence_excerpt": null,
+        "next_action": "Inspect available metadata or obtain usable conversation text before substantive analysis.",
+        "route_reason": "No usable supplied transcript is available. Do not infer a conversation outcome from missing text.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C19/human-review.json",
+      "content": {
+        "record_ref": "C19",
+        "source_type": "call",
+        "source_id": "placeholder-call-C19",
+        "route": "Human review",
+        "source_revision": 1,
+        "review_state": "missing",
+        "analysis_freshness": "current",
+        "summary": "No usable supplied text; substantive analysis intentionally withheld.",
+        "evidence_excerpt": null,
+        "next_action": "Inspect available metadata or obtain usable conversation text before substantive analysis.",
+        "route_reason": "No usable supplied transcript is available. Do not infer a conversation outcome from missing text.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C20/human-review.json",
+      "content": {
+        "record_ref": "C20",
+        "source_type": "call",
+        "source_id": "placeholder-call-C20",
+        "route": "Human review",
+        "source_revision": 1,
+        "review_state": "missing",
+        "analysis_freshness": "current",
+        "summary": "No usable supplied text; substantive analysis intentionally withheld.",
+        "evidence_excerpt": null,
+        "next_action": "Inspect available metadata or obtain usable conversation text before substantive analysis.",
+        "route_reason": "No usable supplied transcript is available. Do not infer a conversation outcome from missing text.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C21/human-review.json",
+      "content": {
+        "record_ref": "C21",
+        "source_type": "call",
+        "source_id": "placeholder-call-C21",
+        "route": "Human review",
+        "source_revision": 1,
+        "review_state": "missing",
+        "analysis_freshness": "current",
+        "summary": "No usable supplied text; substantive analysis intentionally withheld.",
+        "evidence_excerpt": null,
+        "next_action": "Inspect available metadata or obtain usable conversation text before substantive analysis.",
+        "route_reason": "No usable supplied transcript is available. Do not infer a conversation outcome from missing text.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C22/human-review.json",
+      "content": {
+        "record_ref": "C22",
+        "source_type": "call",
+        "source_id": "placeholder-call-C22",
+        "route": "Human review",
+        "source_revision": 1,
+        "review_state": "missing",
+        "analysis_freshness": "current",
+        "summary": "No usable supplied text; substantive analysis intentionally withheld.",
+        "evidence_excerpt": null,
+        "next_action": "Inspect available metadata or obtain usable conversation text before substantive analysis.",
+        "route_reason": "No usable supplied transcript is available. Do not infer a conversation outcome from missing text.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C23/human-review.json",
+      "content": {
+        "record_ref": "C23",
+        "source_type": "call",
+        "source_id": "placeholder-call-C23",
+        "route": "Human review",
+        "source_revision": 1,
+        "review_state": "missing",
+        "analysis_freshness": "current",
+        "summary": "No usable supplied text; substantive analysis intentionally withheld.",
+        "evidence_excerpt": null,
+        "next_action": "Inspect available metadata or obtain usable conversation text before substantive analysis.",
+        "route_reason": "No usable supplied transcript is available. Do not infer a conversation outcome from missing text.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C24/human-review.json",
+      "content": {
+        "record_ref": "C24",
+        "source_type": "call",
+        "source_id": "placeholder-call-C24",
+        "route": "Human review",
+        "source_revision": 1,
+        "review_state": "missing",
+        "analysis_freshness": "current",
+        "summary": "No usable supplied text; substantive analysis intentionally withheld.",
+        "evidence_excerpt": null,
+        "next_action": "Inspect available metadata or obtain usable conversation text before substantive analysis.",
+        "route_reason": "No usable supplied transcript is available. Do not infer a conversation outcome from missing text.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C25/human-review.json",
+      "content": {
+        "record_ref": "C25",
+        "source_type": "call",
+        "source_id": "placeholder-call-C25",
+        "route": "Human review",
+        "source_revision": 1,
+        "review_state": "missing",
+        "analysis_freshness": "current",
+        "summary": "No usable supplied text; substantive analysis intentionally withheld.",
+        "evidence_excerpt": null,
+        "next_action": "Inspect available metadata or obtain usable conversation text before substantive analysis.",
+        "route_reason": "No usable supplied transcript is available. Do not infer a conversation outcome from missing text.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C26/human-review.json",
+      "content": {
+        "record_ref": "C26",
+        "source_type": "call",
+        "source_id": "placeholder-call-C26",
+        "route": "Human review",
+        "source_revision": 1,
+        "review_state": "missing",
+        "analysis_freshness": "current",
+        "summary": "No usable supplied text; substantive analysis intentionally withheld.",
+        "evidence_excerpt": null,
+        "next_action": "Inspect available metadata or obtain usable conversation text before substantive analysis.",
+        "route_reason": "No usable supplied transcript is available. Do not infer a conversation outcome from missing text.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C27/human-review.json",
+      "content": {
+        "record_ref": "C27",
+        "source_type": "call",
+        "source_id": "placeholder-call-C27",
+        "route": "Human review",
+        "source_revision": 1,
+        "review_state": "missing",
+        "analysis_freshness": "current",
+        "summary": "No usable supplied text; substantive analysis intentionally withheld.",
+        "evidence_excerpt": null,
+        "next_action": "Inspect available metadata or obtain usable conversation text before substantive analysis.",
+        "route_reason": "No usable supplied transcript is available. Do not infer a conversation outcome from missing text.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C28/human-review.json",
+      "content": {
+        "record_ref": "C28",
+        "source_type": "call",
+        "source_id": "placeholder-call-C28",
+        "route": "Human review",
+        "source_revision": 1,
+        "review_state": "missing",
+        "analysis_freshness": "current",
+        "summary": "No usable supplied text; substantive analysis intentionally withheld.",
+        "evidence_excerpt": null,
+        "next_action": "Inspect available metadata or obtain usable conversation text before substantive analysis.",
+        "route_reason": "No usable supplied transcript is available. Do not infer a conversation outcome from missing text.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C29/human-review.json",
+      "content": {
+        "record_ref": "C29",
+        "source_type": "call",
+        "source_id": "placeholder-call-C29",
+        "route": "Human review",
+        "source_revision": 1,
+        "review_state": "missing",
+        "analysis_freshness": "current",
+        "summary": "No usable supplied text; substantive analysis intentionally withheld.",
+        "evidence_excerpt": null,
+        "next_action": "Inspect available metadata or obtain usable conversation text before substantive analysis.",
+        "route_reason": "No usable supplied transcript is available. Do not infer a conversation outcome from missing text.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/call/C30/human-review.json",
+      "content": {
+        "record_ref": "C30",
+        "source_type": "call",
+        "source_id": "placeholder-call-C30",
+        "route": "Human review",
+        "source_revision": 1,
+        "review_state": "missing",
+        "analysis_freshness": "current",
+        "summary": "No usable supplied text; substantive analysis intentionally withheld.",
+        "evidence_excerpt": null,
+        "next_action": "Inspect available metadata or obtain usable conversation text before substantive analysis.",
+        "route_reason": "No usable supplied transcript is available. Do not infer a conversation outcome from missing text.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/meeting/M01/deal-next-steps.json",
+      "content": {
+        "record_ref": "M01",
+        "source_type": "meeting",
+        "source_id": "cb5cecac-e68d-52b7-b10b-b0c748efc467",
+        "route": "Deal next steps",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (5081 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Partner A: My understanding was that you help people open bank accounts remotely. That is what I wanted to explore for the clients coming through Harborpath Advisory.\nTeam member A: Yes, with one important boundary: we work with registered businesses, not individuals opening personal accounts. Is the business use case what you had in mind?\nPartner A: I am open to whatever I can sensibly offer our clients. Tell me what the actual product is and how the arrangement works.\nTeam member A: For busine",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/meeting/M01/internal-vendor-note.json",
+      "content": {
+        "record_ref": "M01",
+        "source_type": "meeting",
+        "source_id": "cb5cecac-e68d-52b7-b10b-b0c748efc467",
+        "route": "Internal / vendor note",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (5081 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Partner A: My understanding was that you help people open bank accounts remotely. That is what I wanted to explore for the clients coming through Harborpath Advisory.\nTeam member A: Yes, with one important boundary: we work with registered businesses, not individuals opening personal accounts. Is the business use case what you had in mind?\nPartner A: I am open to whatever I can sensibly offer our clients. Tell me what the actual product is and how the arrangement works.\nTeam member A: For busine",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/meeting/M02/customer-follow-up.json",
+      "content": {
+        "record_ref": "M02",
+        "source_type": "meeting",
+        "source_id": "1a21c409-c050-5787-90af-2667e057e1b6",
+        "route": "Customer follow-up",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (6994 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Team member A: I work on strategy and partnerships at SpendNest. We serve businesses with cards and accounts payable, and we are developing accounts receivable. We want to understand whether LedgerBridge can give us compliant invoicing coverage across our operating markets. My colleague leads the product side.\nSupplier A: Then I will cover the market strategy as well as the technical integration. Are you more interested in generating invoice PDFs or in electronic invoicing through the relevant n",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/meeting/M02/deal-next-steps.json",
+      "content": {
+        "record_ref": "M02",
+        "source_type": "meeting",
+        "source_id": "1a21c409-c050-5787-90af-2667e057e1b6",
+        "route": "Deal next steps",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (6994 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Team member A: I work on strategy and partnerships at SpendNest. We serve businesses with cards and accounts payable, and we are developing accounts receivable. We want to understand whether LedgerBridge can give us compliant invoicing coverage across our operating markets. My colleague leads the product side.\nSupplier A: Then I will cover the market strategy as well as the technical integration. Are you more interested in generating invoice PDFs or in electronic invoicing through the relevant n",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/meeting/M02/sales-coaching.json",
+      "content": {
+        "record_ref": "M02",
+        "source_type": "meeting",
+        "source_id": "1a21c409-c050-5787-90af-2667e057e1b6",
+        "route": "Sales coaching",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (6994 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Team member A: I work on strategy and partnerships at SpendNest. We serve businesses with cards and accounts payable, and we are developing accounts receivable. We want to understand whether LedgerBridge can give us compliant invoicing coverage across our operating markets. My colleague leads the product side.\nSupplier A: Then I will cover the market strategy as well as the technical integration. Are you more interested in generating invoice PDFs or in electronic invoicing through the relevant n",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/meeting/M02/internal-vendor-note.json",
+      "content": {
+        "record_ref": "M02",
+        "source_type": "meeting",
+        "source_id": "1a21c409-c050-5787-90af-2667e057e1b6",
+        "route": "Internal / vendor note",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (6994 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Team member A: I work on strategy and partnerships at SpendNest. We serve businesses with cards and accounts payable, and we are developing accounts receivable. We want to understand whether LedgerBridge can give us compliant invoicing coverage across our operating markets. My colleague leads the product side.\nSupplier A: Then I will cover the market strategy as well as the technical integration. Are you more interested in generating invoice PDFs or in electronic invoicing through the relevant n",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/meeting/M03/customer-follow-up.json",
+      "content": {
+        "record_ref": "M03",
+        "source_type": "meeting",
+        "source_id": "398672e7-62dd-5afd-846d-0237d49792fb",
+        "route": "Customer follow-up",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (6641 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Customer A: We spoke a while ago. My finance colleague is joining today because we need to understand how this would actually work, and then revisit the price.\nTeam member A: SpendNest can handle corporate cards, employee payments and accounting integration. I understand travel and smaller operating expenses are the immediate use case. Before the demonstration, what would you particularly like to see?\nCustomer B: Cards first. Our overseas team already has a provider they like. Here we reimburse ",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/meeting/M03/deal-next-steps.json",
+      "content": {
+        "record_ref": "M03",
+        "source_type": "meeting",
+        "source_id": "398672e7-62dd-5afd-846d-0237d49792fb",
+        "route": "Deal next steps",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (6641 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Customer A: We spoke a while ago. My finance colleague is joining today because we need to understand how this would actually work, and then revisit the price.\nTeam member A: SpendNest can handle corporate cards, employee payments and accounting integration. I understand travel and smaller operating expenses are the immediate use case. Before the demonstration, what would you particularly like to see?\nCustomer B: Cards first. Our overseas team already has a provider they like. Here we reimburse ",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/meeting/M03/internal-vendor-note.json",
+      "content": {
+        "record_ref": "M03",
+        "source_type": "meeting",
+        "source_id": "398672e7-62dd-5afd-846d-0237d49792fb",
+        "route": "Internal / vendor note",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (6641 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Customer A: We spoke a while ago. My finance colleague is joining today because we need to understand how this would actually work, and then revisit the price.\nTeam member A: SpendNest can handle corporate cards, employee payments and accounting integration. I understand travel and smaller operating expenses are the immediate use case. Before the demonstration, what would you particularly like to see?\nCustomer B: Cards first. Our overseas team already has a provider they like. Here we reimburse ",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/meeting/M04/deal-next-steps.json",
+      "content": {
+        "record_ref": "M04",
+        "source_type": "meeting",
+        "source_id": "b0f79b3d-37ba-52f9-b2bc-58b159dd6d91",
+        "route": "Deal next steps",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (6008 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Team member A: I wanted to discuss the migration while there is still time to plan it. We should cover the present situation, the next steps and any feedback from your side.\nTeam member A: Much of your usage is physical-card spending. We have seen acceptance problems with the existing programme and are proposing a move to a different provider and card network. We already operate that alternative programme, including a wallet-payment option.\nCustomer A: I thought the wallet-payment option was com",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/meeting/M04/sales-coaching.json",
+      "content": {
+        "record_ref": "M04",
+        "source_type": "meeting",
+        "source_id": "b0f79b3d-37ba-52f9-b2bc-58b159dd6d91",
+        "route": "Sales coaching",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (6008 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Team member A: I wanted to discuss the migration while there is still time to plan it. We should cover the present situation, the next steps and any feedback from your side.\nTeam member A: Much of your usage is physical-card spending. We have seen acceptance problems with the existing programme and are proposing a move to a different provider and card network. We already operate that alternative programme, including a wallet-payment option.\nCustomer A: I thought the wallet-payment option was com",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/meeting/M04/internal-vendor-note.json",
+      "content": {
+        "record_ref": "M04",
+        "source_type": "meeting",
+        "source_id": "b0f79b3d-37ba-52f9-b2bc-58b159dd6d91",
+        "route": "Internal / vendor note",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (6008 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Team member A: I wanted to discuss the migration while there is still time to plan it. We should cover the present situation, the next steps and any feedback from your side.\nTeam member A: Much of your usage is physical-card spending. We have seen acceptance problems with the existing programme and are proposing a move to a different provider and card network. We already operate that alternative programme, including a wallet-payment option.\nCustomer A: I thought the wallet-payment option was com",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/meeting/M05/human-review.json",
+      "content": {
+        "record_ref": "M05",
+        "source_type": "meeting",
+        "source_id": "placeholder-meeting-M05",
+        "route": "Human review",
+        "source_revision": 1,
+        "review_state": "missing",
+        "analysis_freshness": "current",
+        "summary": "No usable supplied text; substantive analysis intentionally withheld.",
+        "evidence_excerpt": null,
+        "next_action": "Inspect available metadata or obtain usable conversation text before substantive analysis.",
+        "route_reason": "No usable supplied transcript is available. Do not infer a conversation outcome from missing text.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/meeting/M06/customer-follow-up.json",
+      "content": {
+        "record_ref": "M06",
+        "source_type": "meeting",
+        "source_id": "657b9e9d-9472-5b01-a127-a648ad7e8cf7",
+        "route": "Customer follow-up",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (6408 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Team member A: Good to speak after connecting professionally. I work on finance at SpendNest, and part of my interest is how finance teams spend their time. We have expense workflows and are also working on receivables automation. I would like to understand your role before jumping into the product.\nCustomer A: I handle finance for one branch of Mapletrail Services. We do software development and testing. The main office supports me, but locally I cover a broad set of tasks rather than having a ",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/meeting/M06/deal-next-steps.json",
+      "content": {
+        "record_ref": "M06",
+        "source_type": "meeting",
+        "source_id": "657b9e9d-9472-5b01-a127-a648ad7e8cf7",
+        "route": "Deal next steps",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (6408 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Team member A: Good to speak after connecting professionally. I work on finance at SpendNest, and part of my interest is how finance teams spend their time. We have expense workflows and are also working on receivables automation. I would like to understand your role before jumping into the product.\nCustomer A: I handle finance for one branch of Mapletrail Services. We do software development and testing. The main office supports me, but locally I cover a broad set of tasks rather than having a ",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/meeting/M06/internal-vendor-note.json",
+      "content": {
+        "record_ref": "M06",
+        "source_type": "meeting",
+        "source_id": "657b9e9d-9472-5b01-a127-a648ad7e8cf7",
+        "route": "Internal / vendor note",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (6408 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Team member A: Good to speak after connecting professionally. I work on finance at SpendNest, and part of my interest is how finance teams spend their time. We have expense workflows and are also working on receivables automation. I would like to understand your role before jumping into the product.\nCustomer A: I handle finance for one branch of Mapletrail Services. We do software development and testing. The main office supports me, but locally I cover a broad set of tasks rather than having a ",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/meeting/M07/customer-follow-up.json",
+      "content": {
+        "record_ref": "M07",
+        "source_type": "meeting",
+        "source_id": "4f304fff-fd40-5cfc-a366-0a134c445c2a",
+        "route": "Customer follow-up",
+        "source_revision": 2,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (3993 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Team member A: I wanted to go through the issues you sent yesterday. If you share your screen, we can look at what is happening and I can take the details back to the team.\nCustomer A: The first one is editing the description. I am changing this event-payment description to a short reference and clicking Save changes. Now look at the displayed description again.\nTeam member A: The field still shows the earlier wording. So the change is not appearing after you save, is that right?\nCustomer A: Yes",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/meeting/M07/deal-next-steps.json",
+      "content": {
+        "record_ref": "M07",
+        "source_type": "meeting",
+        "source_id": "4f304fff-fd40-5cfc-a366-0a134c445c2a",
+        "route": "Deal next steps",
+        "source_revision": 2,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (3993 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Team member A: I wanted to go through the issues you sent yesterday. If you share your screen, we can look at what is happening and I can take the details back to the team.\nCustomer A: The first one is editing the description. I am changing this event-payment description to a short reference and clicking Save changes. Now look at the displayed description again.\nTeam member A: The field still shows the earlier wording. So the change is not appearing after you save, is that right?\nCustomer A: Yes",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/meeting/M07/internal-vendor-note.json",
+      "content": {
+        "record_ref": "M07",
+        "source_type": "meeting",
+        "source_id": "4f304fff-fd40-5cfc-a366-0a134c445c2a",
+        "route": "Internal / vendor note",
+        "source_revision": 2,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (3993 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Team member A: I wanted to go through the issues you sent yesterday. If you share your screen, we can look at what is happening and I can take the details back to the team.\nCustomer A: The first one is editing the description. I am changing this event-payment description to a short reference and clicking Save changes. Now look at the displayed description again.\nTeam member A: The field still shows the earlier wording. So the change is not appearing after you save, is that right?\nCustomer A: Yes",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/meeting/M08/human-review.json",
+      "content": {
+        "record_ref": "M08",
+        "source_type": "meeting",
+        "source_id": "placeholder-meeting-M08",
+        "route": "Human review",
+        "source_revision": 1,
+        "review_state": "missing",
+        "analysis_freshness": "current",
+        "summary": "No usable supplied text; substantive analysis intentionally withheld.",
+        "evidence_excerpt": null,
+        "next_action": "Inspect available metadata or obtain usable conversation text before substantive analysis.",
+        "route_reason": "No usable supplied transcript is available. Do not infer a conversation outcome from missing text.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/meeting/M09/internal-vendor-note.json",
+      "content": {
+        "record_ref": "M09",
+        "source_type": "meeting",
+        "source_id": "4b5b9192-f3fc-505a-8e77-4d2ffaa54594",
+        "route": "Internal / vendor note",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (5236 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Customer A: I finally have time to return to the account setup. The invitation for Brookmint Holdings did not work when I tried it. It may have expired, or perhaps we can try again together.\nTeam member A: There are two things to cover: getting you into Brookmint Holdings and the accounting issue you reported for Northkite Equipment. Our records show the invitation was sent, but acceptance is not recorded.\nCustomer A: I cannot find the old message in this thread. A fresh link in the conversation",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/meeting/M10/customer-follow-up.json",
+      "content": {
+        "record_ref": "M10",
+        "source_type": "meeting",
+        "source_id": "337f297d-9385-5b82-9e54-5019c1ed912c",
+        "route": "Customer follow-up",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (4102 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Team member A: I am finishing another call. Give me a couple of minutes and I will be back for the session.\nTeam member B: I do not think the optional attendee is joining. We can wait for the trainer to return.\nTeam member A: Yesterday we covered the subscription side of billing. Any questions before I show the remaining part, how invoices are generated and cleared?\nTeam member B: I have access to a demo account as an administrator, but I do not have the back-office super-admin access you mentio",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/meeting/M10/deal-next-steps.json",
+      "content": {
+        "record_ref": "M10",
+        "source_type": "meeting",
+        "source_id": "337f297d-9385-5b82-9e54-5019c1ed912c",
+        "route": "Deal next steps",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (4102 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Team member A: I am finishing another call. Give me a couple of minutes and I will be back for the session.\nTeam member B: I do not think the optional attendee is joining. We can wait for the trainer to return.\nTeam member A: Yesterday we covered the subscription side of billing. Any questions before I show the remaining part, how invoices are generated and cleared?\nTeam member B: I have access to a demo account as an administrator, but I do not have the back-office super-admin access you mentio",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/meeting/M10/internal-vendor-note.json",
+      "content": {
+        "record_ref": "M10",
+        "source_type": "meeting",
+        "source_id": "337f297d-9385-5b82-9e54-5019c1ed912c",
+        "route": "Internal / vendor note",
+        "source_revision": 1,
+        "review_state": "pending",
+        "analysis_freshness": "current",
+        "summary": "Conversation text available (4102 characters). Review the evidence before finalising analysis.",
+        "evidence_excerpt": "Team member A: I am finishing another call. Give me a couple of minutes and I will be back for the session.\nTeam member B: I do not think the optional attendee is joining. We can wait for the trainer to return.\nTeam member A: Yesterday we covered the subscription side of billing. Any questions before I show the remaining part, how invoices are generated and cleared?\nTeam member B: I have access to a demo account as an administrator, but I do not have the back-office super-admin access you mentio",
+        "next_action": "Review the transcript, verify the suggested route and assign a next action only where the source supports it.",
+        "route_reason": "Suggested from supplied conversation text using transparent keyword rules; confirm the evidence before acting.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/meeting/M11/human-review.json",
+      "content": {
+        "record_ref": "M11",
+        "source_type": "meeting",
+        "source_id": "placeholder-meeting-M11",
+        "route": "Human review",
+        "source_revision": 1,
+        "review_state": "missing",
+        "analysis_freshness": "current",
+        "summary": "No usable supplied text; substantive analysis intentionally withheld.",
+        "evidence_excerpt": null,
+        "next_action": "Inspect available metadata or obtain usable conversation text before substantive analysis.",
+        "route_reason": "No usable supplied transcript is available. Do not infer a conversation outcome from missing text.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/meeting/M12/human-review.json",
+      "content": {
+        "record_ref": "M12",
+        "source_type": "meeting",
+        "source_id": "placeholder-meeting-M12",
+        "route": "Human review",
+        "source_revision": 1,
+        "review_state": "missing",
+        "analysis_freshness": "current",
+        "summary": "No usable supplied text; substantive analysis intentionally withheld.",
+        "evidence_excerpt": null,
+        "next_action": "Inspect available metadata or obtain usable conversation text before substantive analysis.",
+        "route_reason": "No usable supplied transcript is available. Do not infer a conversation outcome from missing text.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/meeting/M13/human-review.json",
+      "content": {
+        "record_ref": "M13",
+        "source_type": "meeting",
+        "source_id": "placeholder-meeting-M13",
+        "route": "Human review",
+        "source_revision": 1,
+        "review_state": "missing",
+        "analysis_freshness": "current",
+        "summary": "No usable supplied text; substantive analysis intentionally withheld.",
+        "evidence_excerpt": null,
+        "next_action": "Inspect available metadata or obtain usable conversation text before substantive analysis.",
+        "route_reason": "No usable supplied transcript is available. Do not infer a conversation outcome from missing text.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    },
+    {
+      "path": "outputs/meeting/M14/human-review.json",
+      "content": {
+        "record_ref": "M14",
+        "source_type": "meeting",
+        "source_id": "placeholder-meeting-M14",
+        "route": "Human review",
+        "source_revision": 1,
+        "review_state": "missing",
+        "analysis_freshness": "current",
+        "summary": "No usable supplied text; substantive analysis intentionally withheld.",
+        "evidence_excerpt": null,
+        "next_action": "Inspect available metadata or obtain usable conversation text before substantive analysis.",
+        "route_reason": "No usable supplied transcript is available. Do not infer a conversation outcome from missing text.",
+        "manual_override": false,
+        "review_notes": null
+      }
+    }
+  ]
+}
